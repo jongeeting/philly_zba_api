@@ -50,6 +50,9 @@ class ZBAApiClient:
             List of appeal records as dictionaries
         """
         # Build the SQL query
+        # Note: Philadelphia changed the applicationtype field format in 2020:
+        # - Old format (2007-2020): 'RB_ZBA'
+        # - New format (2020-present): 'Zoning Board of Adjustment'
         query = """
             SELECT
                 address,
@@ -64,12 +67,10 @@ class ZBAApiClient:
                 appealnumber,
                 primaryappellant
             FROM appeals
-            WHERE applicationtype = 'RB_ZBA'
+            WHERE applicationtype IN ('RB_ZBA', 'Zoning Board of Adjustment')
         """
 
         if days_back:
-            # Note: The dataset only goes to March 2020, so this filter may not be useful
-            # for current data, but it's here for when the dataset is updated
             query += f" AND createddate >= NOW() - INTERVAL '{days_back} days'"
 
         query += f" ORDER BY {order_by}"

@@ -15,13 +15,19 @@ A comprehensive tool for Philadelphia YIMBY organizing to track Zoning Board of 
 ## Data Sources
 
 - **API**: https://phl.carto.com/api/v2/sql
-- **Primary Dataset**: `appeals` table (19,101 records through March 2020)
-- **Secondary Dataset**: `board_decisions` table (55,462 records through October 2023)
-- **Live Calendar**: https://li.phila.gov/zba-appeals-calendar (scraper included)
+- **Dataset**: `appeals` table - **26,461 ZBA appeals** (January 2007 → January 2026)
+- **Update Frequency**: **Updated nightly**
+- **Multifamily Projects**: 13,042 (49.3%)
 
-**⚠️ Data Freshness**: The `appeals` table (with full address and description data) was last updated **March 2020**. The included web scraper can fetch current 2024-2025 data from the live ZBA calendar.
+✅ **Data Currency**: The API has **current data through January 2026**, updated nightly!
 
-**See [DATA_SOURCES.md](DATA_SOURCES.md)** for a complete analysis of available data sources.
+**Important**: Philadelphia changed the `applicationtype` field in 2020:
+- Old format (2007-2020): `'RB_ZBA'`
+- New format (2020-present): `'Zoning Board of Adjustment'`
+
+The code queries both formats to get complete historical and current data.
+
+**See [DATA_FIX.md](DATA_FIX.md)** for details on how the current data was discovered.
 
 ## Installation
 
