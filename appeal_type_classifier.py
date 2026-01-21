@@ -16,42 +16,84 @@ class AppealTypeClassifier:
     """Classifies appeals as Use Variance vs Dimensional Variance using text patterns."""
 
     # Patterns that strongly suggest USE variance
-    # Precision: 92.8% on 2018-2019 training data
+    # Updated based on ECLIPSE data analysis (2020+)
+    # Key finding: Need to distinguish "FOR USE AS" from construction descriptions
     USE_PATTERNS = [
-        (r'\bPERMIT FOR.*FAMILY.*DWELLING\b', 'Multi-family use'),
+        # Multi-family household living (specific pattern - indicates use change)
+        (r'\bFOR USE AS.*(TWO|THREE|FOUR|FIVE|SIX|SEVEN|EIGHT|NINE|\d+).?FAMILY.*HOUSEHOLD LIVING', 'For use as X-family household living'),
+        (r'\bFOR USE AS.*HOUSEHOLD LIVING', 'For use as household living'),
+
+        # Multi-family patterns with numbers (indicates use variance)
+        (r'\bMULTI-?FAMILY.*HOUSEHOLD LIVING', 'Multifamily household living'),
+        (r'\bMULTI-?FAMILY.*DWELLING', 'Multifamily dwelling'),
+        (r'\bTWO.?FAMILY.*DWELLING', 'Two-family dwelling'),
+        (r'\bTHREE.?FAMILY.*DWELLING', 'Three-family dwelling'),
+        (r'\bFOUR.?FAMILY.*DWELLING', 'Four-family dwelling'),
+        (r'\bFIVE.?FAMILY.*DWELLING', 'Five-family dwelling'),
+
+        # Dwelling unit numbers (specific counts indicate use classification)
+        (r'\(\d+\).*DWELLING UNIT', 'X dwelling units'),
+        (r'\(\d+\).*(UNIT|FAMILY)', 'X units/families'),
+        (r'\bFOR USE AS.*DWELLING', 'For use as dwelling'),
+
+        # Non-residential uses (clear use variance signals)
+        (r'\bFOR USE AS.*RESTAURANT\b', 'For use as restaurant'),
+        (r'\bFOR USE AS.*OFFICE\b', 'For use as office'),
+        (r'\bFOR USE AS.*RETAIL\b', 'For use as retail'),
+        (r'\bFOR USE AS.*COMMERCIAL\b', 'For use as commercial'),
+        (r'\bRESTAURANT\b', 'Restaurant use'),
+        (r'\bOFFICE\b', 'Office use'),
+        (r'\bRETAIL.*SALES\b', 'Retail use'),
+        (r'\bEATING.*DRINKING\b', 'Eating/drinking establishment'),
+        (r'\bVISITOR ACCOMMODATION', 'Short-term rental'),
+        (r'\bCOMMISSARY\b', 'Commissary use'),
+        (r'\bCAFE\b', 'Cafe use'),
+        (r'\bBAR\b', 'Bar use'),
+
+        # General use change patterns
         (r'\bCHANGE.*USE\b', 'Change of use'),
         (r'\bPERMIT FOR USE\b', 'Permit for use'),
-        (r'\bPERMIT FOR.*RESTAURANT\b', 'Restaurant use'),
-        (r'\bPERMIT FOR.*OFFICE\b', 'Office use'),
-        (r'\bPERMIT FOR.*RETAIL\b', 'Retail use'),
-        (r'\bPERMIT FOR.*COMMERCIAL\b', 'Commercial use'),
-        (r'\bVISITOR ACCOMMODATION', 'Short-term rental'),
-        (r'\bPERMIT FOR.*EATING.*DRINKING\b', 'Restaurant/bar'),
-        (r'\bPERMIT FOR.*BUSINESS\b', 'Business use'),
-        (r'\bPERMIT FOR.*MEDICAL\b', 'Medical use'),
-        (r'\bPERMIT FOR.*SCHOOL\b', 'School use'),
-        (r'\bPERMIT FOR.*CHILD.*CARE\b', 'Childcare use'),
     ]
 
     # Patterns that strongly suggest DIMENSIONAL variance
-    # Precision: 75.0% on 2018-2019 training data
+    # Updated based on ECLIPSE data analysis (2020+)
     DIMENSIONAL_PATTERNS = [
-        (r'\bERECTION OF.*ADDITION\b', 'Addition (height/size)'),
-        (r'\bERECTION OF.*ROOF DECK\b', 'Roof deck'),
-        (r'\bRELOCATION OF LOT LINE', 'Lot line (lot size)'),
+        # Structure/construction patterns (strongest signals)
+        (r'\bERECTION OF.*STRUCTURE\b', 'Erection of structure'),
+        (r'\bNEWCON\b', 'New construction'),
+        (r'\bNEW CONSTRUCTION\b', 'New construction'),
+        (r'\bERECTION OF.*ADDITION\b', 'Addition'),
+        (r'\bADDITION\b', 'Addition'),
+
+        # Roof deck patterns (common dimensional issue)
+        (r'\bROOF DECK\b', 'Roof deck'),
+        (r'\bROOF ACCESS\b', 'Roof access structure'),
+        (r'\bERECTION OF.*ROOF DECK\b', 'Erection of roof deck'),
+
+        # Parking patterns
+        (r'\bPARKING SPACE', 'Parking spaces'),
+        (r'\bOFF-STREET PARKING\b', 'Off-street parking'),
+        (r'\bACCESSORY PARKING\b', 'Accessory parking'),
+
+        # Lot dimension patterns
+        (r'\bRELOCATION OF LOT LINE', 'Lot line relocation'),
+        (r'\bLOT LINE\b', 'Lot line'),
+        (r'\bLOT AREA\b', 'Lot area'),
+        (r'\bLOT WIDTH\b', 'Lot width'),
+        (r'\bLOT COVERAGE\b', 'Lot coverage'),
+
+        # Setback patterns
         (r'\bFRONT YARD\b', 'Front yard setback'),
         (r'\bREAR YARD\b', 'Rear yard setback'),
         (r'\bSIDE YARD\b', 'Side yard setback'),
         (r'\bSETBACK\b', 'Setback'),
-        (r'\bHEIGHT.*EXCEED', 'Height exceeds'),
-        (r'\bLOT AREA\b', 'Lot area'),
-        (r'\bLOT WIDTH\b', 'Lot width'),
-        (r'\bLOT COVERAGE\b', 'Lot coverage'),
         (r'\bOPEN SPACE\b', 'Open space'),
-        (r'\bPARKING.*SPACE', 'Parking spaces'),
-        (r'\bOFF-STREET PARKING\b', 'Off-street parking'),
-        (r'\bFLOOR AREA RATIO\b', 'FAR'),
+
+        # Height patterns
+        (r'\bHEIGHT.*EXCEED', 'Height exceeds'),
+        (r'\d+.?STOR(Y|IES)', 'X stories'),
         (r'\bSTORY\b.*\bHEIGHT\b', 'Story height'),
+        (r'\bFLOOR AREA RATIO\b', 'FAR'),
     ]
 
     CARTO_API = "https://phl.carto.com/api/v2/sql"
