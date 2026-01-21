@@ -137,17 +137,22 @@ class ZoningCodeAnalysis:
             print(f"  {decision:20s}: {count:6,} ({pct:5.1f}%)")
 
         # Calculate "granted" rate (various forms of approval)
-        granted = decisions[decisions['decision'].str.contains('GRANT', case=False, na=False)]
+        # Note: Decision field format changed in 2020:
+        # - Old: "GRANTED", "GRANTED/PROV"
+        # - New: "Complete", "Granted", "Approved"
+        approval_keywords = ['GRANT', 'Complete', 'Approved']
+        granted = decisions[decisions['decision'].str.contains('|'.join(approval_keywords), case=False, na=False)]
         granted_rate = len(granted) / len(decisions) * 100
         print(f"\n✓ Overall Approval Rate: {granted_rate:.1f}%")
         print(f"  (Compare to 2018 study finding: 90%)")
+        print(f"  Note: 'Complete' = approved (post-2020 format), 'GRANTED' = approved (pre-2020)")
 
         # By period
         print("\nApproval Rates by Period:")
         for period in ['Pre-Reform (2007-2012)', 'Original Study (2012-2017)', 'Extension (2017-2026)']:
             period_data = decisions[decisions['period'] == period]
             if len(period_data) > 0:
-                period_granted = period_data[period_data['decision'].str.contains('GRANT', case=False, na=False)]
+                period_granted = period_data[period_data['decision'].str.contains('|'.join(approval_keywords), case=False, na=False)]
                 period_rate = len(period_granted) / len(period_data) * 100
                 print(f"  {period:30s}: {period_rate:5.1f}% ({len(period_granted):,}/{len(period_data):,})")
 
@@ -156,7 +161,7 @@ class ZoningCodeAnalysis:
         yearly_approval = []
         for year in sorted(decisions['year'].unique()):
             year_data = decisions[decisions['year'] == year]
-            year_granted = year_data[year_data['decision'].str.contains('GRANT', case=False, na=False)]
+            year_granted = year_data[year_data['decision'].str.contains('|'.join(approval_keywords), case=False, na=False)]
             approval_rate = len(year_granted) / len(year_data) * 100 if len(year_data) > 0 else 0
             yearly_approval.append({
                 'year': year,
@@ -247,7 +252,8 @@ class ZoningCodeAnalysis:
 
         # Multifamily approval rates
         mf_with_decision = multifamily[multifamily['decision'].notna()]
-        mf_granted = mf_with_decision[mf_with_decision['decision'].str.contains('GRANT', case=False, na=False)]
+        approval_keywords = ['GRANT', 'Complete', 'Approved']
+        mf_granted = mf_with_decision[mf_with_decision['decision'].str.contains('|'.join(approval_keywords), case=False, na=False)]
         mf_approval_rate = len(mf_granted) / len(mf_with_decision) * 100 if len(mf_with_decision) > 0 else 0
 
         print(f"\nMultifamily Approval Rate: {mf_approval_rate:.1f}%")
@@ -275,13 +281,14 @@ class ZoningCodeAnalysis:
         # Original study period (2012-2017)
         original = self.appeals_df[self.appeals_df['period'] == 'Original Study (2012-2017)']
         original_decisions = original[original['decision'].notna()]
-        original_granted = original_decisions[original_decisions['decision'].str.contains('GRANT', case=False, na=False)]
+        approval_keywords = ['GRANT', 'Complete', 'Approved']
+        original_granted = original_decisions[original_decisions['decision'].str.contains('|'.join(approval_keywords), case=False, na=False)]
         original_approval = len(original_granted) / len(original_decisions) * 100 if len(original_decisions) > 0 else 0
 
         # Extension period (2017-2026)
         extension = self.appeals_df[self.appeals_df['period'] == 'Extension (2017-2026)']
         extension_decisions = extension[extension['decision'].notna()]
-        extension_granted = extension_decisions[extension_decisions['decision'].str.contains('GRANT', case=False, na=False)]
+        extension_granted = extension_decisions[extension_decisions['decision'].str.contains('|'.join(approval_keywords), case=False, na=False)]
         extension_approval = len(extension_granted) / len(extension_decisions) * 100 if len(extension_decisions) > 0 else 0
 
         print("\nKEY FINDINGS:")
@@ -326,8 +333,9 @@ class ZoningCodeAnalysis:
         annual_summary.columns = ['year', 'total_appeals', 'multifamily_appeals']
 
         # Add decisions
+        approval_keywords = ['GRANT', 'Complete', 'Approved']
         decisions_by_year = self.appeals_df[self.appeals_df['decision'].notna()].groupby('year').apply(
-            lambda x: (x['decision'].str.contains('GRANT', case=False, na=False).sum() / len(x) * 100)
+            lambda x: (x['decision'].str.contains('|'.join(approval_keywords), case=False, na=False).sum() / len(x) * 100)
         ).reset_index(name='approval_rate')
 
         annual_summary = annual_summary.merge(decisions_by_year, on='year', how='left')

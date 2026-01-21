@@ -1,0 +1,218 @@
+================================================================================
+PHILADELPHIA ZONING CODE EFFECTIVENESS ANALYSIS
+Recreating & Extending the 2018 Planning Commission 5-Year Review
+================================================================================
+
+Analysis Date: January 21, 2026
+Data Coverage: 2007-2026 (19 years)
+Loading ZBA appeals data from database...
+Loaded 26461 ZBA appeals
+Loading zoning permits data from Carto API...
+Loaded 121365 zoning permits
+
+================================================================================
+APPROVAL RATE ANALYSIS
+================================================================================
+
+Overall Decision Distribution (2007-2026):
+Total appeals with decisions: 25,496
+  GRANTED             :  8,439 ( 33.1%)
+  GRANTED/PROV        :  6,267 ( 24.6%)
+  Complete            :  4,646 ( 18.2%)
+  DENIED              :  1,676 (  6.6%)
+  WITHDRAWN           :  1,608 (  6.3%)
+  DISMISSED           :    883 (  3.5%)
+  Dismissed / Withdrawn:    742 (  2.9%)
+  Granted             :    524 (  2.1%)
+  Dismissed           :    209 (  0.8%)
+  Withdrawn           :    154 (  0.6%)
+  DENIED/PROV         :     69 (  0.3%)
+  Denied              :     54 (  0.2%)
+  DISMI/ENFORC        :     42 (  0.2%)
+  Approved            :     40 (  0.2%)
+  CONTINUED           :     39 (  0.2%)
+  Refused             :     25 (  0.1%)
+  HELD/INFO           :     22 (  0.1%)
+  HELD                :     22 (  0.1%)
+  ADMIN/REVIEW        :     14 (  0.1%)
+  Continued           :      9 (  0.0%)
+  SUSTAINED           :      7 (  0.0%)
+  REVISED             :      2 (  0.0%)
+  Cancelled           :      1 (  0.0%)
+  Revised             :      1 (  0.0%)
+  RESCHEDULE          :      1 (  0.0%)
+
+✓ Overall Approval Rate: 78.1%
+  (Compare to 2018 study finding: 90%)
+  Note: 'Complete' = approved (post-2020 format), 'GRANTED' = approved (pre-2020)
+
+Approval Rates by Period:
+  Pre-Reform (2007-2012)        :  77.3% (6,921/8,952)
+  Original Study (2012-2017)    :  75.2% (5,253/6,989)
+  Extension (2017-2026)         :  81.0% (7,742/9,555)
+
+Approval Rate by Year:
+  2007:  73.5% (1,134/1,542)
+  2008:  77.7% (1,315/1,693)
+  2009:  78.7% (1,102/1,401)
+  2010:  77.9% (1,283/1,648)
+  2011:  78.5% (1,293/1,648)
+  2012:  77.3% (1,229/1,590)
+  2013:  73.2% (947/1,293)
+  2014:  72.5% (967/1,333)
+  2015:  72.8% (920/1,264)
+  2016:  78.3% (1,158/1,479)
+  2017:  77.3% (1,179/1,525)
+  2018:  76.8% (1,153/1,501)
+  2019:  74.5% (1,178/1,581)
+  2020:  83.5% (842/1,008)
+  2021:  86.6% (1,175/1,357)
+  2022:  79.8% (997/1,249)
+  2023:  83.3% (856/1,027)
+  2024:  87.1% (856/983)
+  2025:  88.8% (332/374)
+
+================================================================================
+VARIANCE VOLUME ANALYSIS
+================================================================================
+
+Annual ZBA Appeal Volume:
+  2007: 1,542 appeals
+  2008: 1,696 appeals
+  2009: 1,401 appeals
+  2010: 1,648 appeals
+  2011: 1,648 appeals
+  2012: 1,596 appeals
+  2013: 1,302 appeals
+  2014: 1,356 appeals
+  2015: 1,284 appeals
+  2016: 1,483 appeals
+  2017: 1,527 appeals
+  2018: 1,501 appeals
+  2019: 1,593 appeals
+  2020: 1,084 appeals
+  2021: 1,403 appeals
+  2022: 1,272 appeals
+  2023: 1,055 appeals
+  2024: 1,071 appeals
+  2025: 984 appeals
+  2026: 15 appeals
+
+Average Annual Volume by Period:
+  Pre-Reform (2007-2012)        :  1492.5 appeals/year (8,955 total)
+  Original Study (2012-2017)    :  1175.5 appeals/year (7,053 total)
+  Extension (2017-2026)         :  1045.3 appeals/year (10,453 total)
+
+================================================================================
+VARIANCE-TO-PERMIT RATIO ANALYSIS
+================================================================================
+
+Year-by-Year Variance Rate (Appeals ÷ Permits):
+Year    Appeals    Permits    Ratio
+----------------------------------------
+2007      1,542      7,036    21.9%
+2008      1,696      6,367    26.6%
+2009      1,401      5,924    23.6%
+2010      1,648      5,998    27.5%
+2011      1,648      5,898    27.9%
+2012      1,596      6,885    23.2%
+2013      1,302      6,360    20.5%
+2014      1,356      6,640    20.4%
+2015      1,284      6,342    20.2%
+2016      1,483      7,118    20.8%
+2017      1,527      6,947    22.0%
+2018      1,501      7,525    19.9%
+2019      1,593      7,923    20.1%
+2020      1,084      5,946    18.2%
+2021      1,403      6,591    21.3%
+2022      1,272      5,975    21.3%
+2023      1,055      5,240    20.1%
+2024      1,071      5,375    19.9%
+2025        984      5,062    19.4%
+2026         15        213     7.0%
+
+Average Variance Rate by Period:
+  Pre-Reform (2007-2012)        :  25.6% (8,955/35,010)
+  Original Study (2012-2017)    :  20.6% (7,053/34,270)
+  Extension (2017-2026)         :  20.1% (10,453/52,085)
+
+================================================================================
+MULTIFAMILY HOUSING ANALYSIS
+================================================================================
+
+Total Multifamily Appeals: 13,042 (49.3% of all appeals)
+
+Multifamily Appeals by Period:
+  Pre-Reform (2007-2012)        : 5,267 (58.8% of period)
+  Original Study (2012-2017)    : 3,573 (50.7% of period)
+  Extension (2017-2026)         : 4,202 (40.2% of period)
+
+Multifamily Approval Rate: 78.2%
+  (9,968/12,746 multifamily appeals approved)
+
+Multifamily Appeals by Year:
+  2007: 907 multifamily (58.8% of 1,542 total)
+  2008: 963 multifamily (56.8% of 1,696 total)
+  2009: 823 multifamily (58.7% of 1,401 total)
+  2010: 967 multifamily (58.7% of 1,648 total)
+  2011: 991 multifamily (60.1% of 1,648 total)
+  2012: 959 multifamily (60.1% of 1,596 total)
+  2013: 853 multifamily (65.5% of 1,302 total)
+  2014: 713 multifamily (52.6% of 1,356 total)
+  2015: 577 multifamily (44.9% of 1,284 total)
+  2016: 657 multifamily (44.3% of 1,483 total)
+  2017: 656 multifamily (43.0% of 1,527 total)
+  2018: 663 multifamily (44.2% of 1,501 total)
+  2019: 772 multifamily (48.5% of 1,593 total)
+  2020: 472 multifamily (43.5% of 1,084 total)
+  2021: 618 multifamily (44.0% of 1,403 total)
+  2022: 454 multifamily (35.7% of 1,272 total)
+  2023: 369 multifamily (35.0% of 1,055 total)
+  2024: 330 multifamily (30.8% of 1,071 total)
+  2025: 289 multifamily (29.4% of 984 total)
+  2026: 9 multifamily (60.0% of 15 total)
+
+================================================================================
+EXECUTIVE SUMMARY: 2018 STUDY VS. 2026 EXTENSION
+================================================================================
+
+KEY FINDINGS:
+
+1. ZBA APPROVAL RATE
+   2018 Study Finding:       90.0%
+   Original Period (2012-17): 75.2%
+   Extension Period (2017-26): 81.0%
+
+2. ANNUAL VARIANCE VOLUME
+   2018 Study Finding:       ~1,000 appeals/year
+   Original Period (2012-17): 1176 appeals/year
+   Extension Period (2017-26): 1161 appeals/year
+
+3. MULTIFAMILY HOUSING
+   Original Period (2012-17): 3,573 multifamily appeals (50.7%)
+   Extension Period (2017-26): 4,202 multifamily appeals (40.2%)
+
+4. CONCLUSION
+   ➜ Approval rate INCREASED by 5.9 percentage points
+
+================================================================================
+
+Exporting data tables to analysis_output/...
+/home/user/philly_zba_api/zoning_code_analysis.py:337: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  decisions_by_year = self.appeals_df[self.appeals_df['decision'].notna()].groupby('year').apply(
+  ✓ annual_summary.csv
+  ✓ period_comparison.csv
+  ✓ decisions_by_year.csv
+
+Data exported to analysis_output/
+
+================================================================================
+ANALYSIS COMPLETE
+================================================================================
+
+Next Steps:
+1. Review exported CSV files in analysis_output/
+2. Create visualizations using the data tables
+3. Draft updated report comparing to 2018 findings
+
+
