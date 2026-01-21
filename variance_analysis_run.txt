@@ -1,0 +1,132 @@
+================================================================================
+PHILADELPHIA ZBA VARIANCE TYPE ANALYSIS
+Identifying Code Issues That Drive Variance Requests
+================================================================================
+Loading appeals data with permit information...
+Fetching appeal types from Carto API...
+Loaded 26461 appeals
+
+================================================================================
+APPEAL TYPE CLASSIFICATION (from official records)
+================================================================================
+
+Appeal Type Distribution:
+  Certificate                   :  1,001 (  3.3%)
+  Dimensional Variance          :  7,433 ( 24.4%)
+  No Data                       :    401 (  1.3%)
+  Other/Unknown                 :  7,896 ( 26.0%)
+  Use Variance                  : 13,676 ( 45.0%)
+
+================================================================================
+CODE VIOLATION TYPE ANALYSIS (keyword-based)
+================================================================================
+
+Violation Type Distribution (All Years):
+  Use Variance                  : 13,679 ( 51.7% of appeals)
+  Height                        : 13,330 ( 50.4% of appeals)
+  Accessory Structure           : 11,574 ( 43.7% of appeals)
+  Parking                       :  6,093 ( 23.0% of appeals)
+  Signage                       :  3,152 ( 11.9% of appeals)
+  Loading / Service             :  1,986 (  7.5% of appeals)
+  Setback                       :  1,118 (  4.2% of appeals)
+  Lot Size / Dimensions         :     55 (  0.2% of appeals)
+  FAR / Density                 :     36 (  0.1% of appeals)
+
+================================================================================
+VIOLATION TYPES BY YEAR
+================================================================================
+
+Year   Use Variance       Height Accessory St      Parking      Signage
+--------------------------------------------------------------------------------
+2007   1,078(  70%) 1,025(  66%)   770(  50%)   433(  28%)   240(  16%)
+2008   1,178(  69%) 1,128(  67%)   748(  44%)   403(  24%)   191(  11%)
+2009   1,066(  76%)   921(  66%)   623(  44%)   335(  24%)   180(  13%)
+2010   1,190(  72%) 1,161(  70%)   766(  46%)   381(  23%)   256(  16%)
+2011   1,208(  73%) 1,164(  71%)   771(  47%)   397(  24%)   264(  16%)
+2012   1,146(  72%) 1,120(  70%)   765(  48%)   420(  26%)   210(  13%)
+2013     865(  66%)   747(  57%)   592(  45%)   323(  25%)   137(  11%)
+2014     902(  67%)   773(  57%)   638(  47%)   341(  25%)   192(  14%)
+2015     919(  72%)   650(  51%)   597(  46%)   306(  24%)   178(  14%)
+2016   1,056(  71%)   772(  52%)   692(  47%)   350(  24%)    97(   7%)
+2017   1,063(  70%)   752(  49%)   709(  46%)   350(  23%)   117(   8%)
+2018   1,099(  73%)   684(  46%)   705(  47%)   357(  24%)   104(   7%)
+2019     900(  56%)   612(  38%)   688(  43%)   360(  23%)   133(   8%)
+2020       8(   1%)   357(  33%)   448(  41%)   237(  22%)   145(  13%)
+2021       0(   0%)   419(  30%)   612(  44%)   271(  19%)   188(  13%)
+2022       0(   0%)   334(  26%)   462(  36%)   272(  21%)   206(  16%)
+2023       0(   0%)   269(  25%)   351(  33%)   199(  19%)   126(  12%)
+2024       1(   0%)   234(  22%)   319(  30%)   186(  17%)    68(   6%)
+2025       0(   0%)   206(  21%)   315(  32%)   170(  17%)   118(  12%)
+2026       0(   0%)     2(  13%)     3(  20%)     2(  13%)     2(  13%)
+
+================================================================================
+VIOLATION TYPES BY REFORM PERIOD
+================================================================================
+
+Pre-Reform (2007-2012):
+  Total appeals: 7,935
+  Top violation types:
+    Use Variance                  : 5,720 ( 72.1%)
+    Height                        : 5,399 ( 68.0%)
+    Accessory Structure           : 3,678 ( 46.4%)
+    Parking                       : 1,949 ( 24.6%)
+    Signage                       : 1,131 ( 14.3%)
+    Loading / Service             : 1,042 ( 13.1%)
+    Setback                       :   538 (  6.8%)
+
+Original Study (2012-2017):
+  Total appeals: 8,548
+  Top violation types:
+    Use Variance                  : 5,951 ( 69.6%)
+    Height                        : 4,814 ( 56.3%)
+    Accessory Structure           : 3,993 ( 46.7%)
+    Parking                       : 2,090 ( 24.5%)
+    Signage                       :   931 ( 10.9%)
+    Loading / Service             :   513 (  6.0%)
+    Setback                       :   372 (  4.4%)
+
+Extension (2017-2026):
+  Total appeals: 9,978
+  Top violation types:
+    Accessory Structure           : 3,903 ( 39.1%)
+    Height                        : 3,117 ( 31.2%)
+    Parking                       : 2,054 ( 20.6%)
+    Use Variance                  : 2,008 ( 20.1%)
+    Signage                       : 1,090 ( 10.9%)
+    Loading / Service             :   431 (  4.3%)
+    Setback                       :   208 (  2.1%)
+
+================================================================================
+MULTIFAMILY PROJECT VIOLATION PATTERNS
+================================================================================
+
+Multifamily projects: 13,042 appeals
+Other projects: 13,419 appeals
+
+Violation Type                     Multifamily           Other    MF Rate
+---------------------------------------------------------------------------
+Height                          7,776( 59.6%)  5,554( 41.4%) 
+Use Variance                    7,710( 59.1%)  5,969( 44.5%) 
+Accessory Structure             5,574( 42.7%)  6,000( 44.7%) 
+Parking                         3,036( 23.3%)  3,057( 22.8%) 
+Signage                           977(  7.5%)  2,175( 16.2%)   (less MF)
+Loading / Service                 821(  6.3%)  1,165(  8.7%) 
+Setback                           661(  5.1%)    457(  3.4%) 
+Lot Size / Dimensions              29(  0.2%)     26(  0.2%) 
+FAR / Density                      27(  0.2%)      9(  0.1%) **MF-heavy**
+
+
+Exporting violation analysis to analysis_output/...
+  ✓ violation_types_by_appeal.csv
+  ✓ violation_types_summary.csv
+
+================================================================================
+ANALYSIS COMPLETE
+================================================================================
+
+Next Steps:
+1. Review violation patterns to identify reform opportunities
+2. Compare to original 2018 study methodology
+3. Identify which code sections drive the most variance activity
+
+
