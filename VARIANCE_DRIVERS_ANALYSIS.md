@@ -22,27 +22,29 @@ Identify which specific zoning regulations drive the most variance appeals, to p
 
 ---
 
-## Major Discovery: Use Variance Reform Success
+## Use Variance Trend (2007-2019 only - see Data Quality Note)
 
-The **2012 zoning code reform dramatically reduced use variance appeals**:
+### ⚠️ IMPORTANT: Data Quality Issue Discovered
 
-### Use Variance Rates by Period:
+**Official variance type data is only available 2007-2019.** In 2020, Philadelphia migrated from HANSEN to ECLIPSE database system, and the new system doesn't populate appeal type classifications. See `DATA_QUALITY_NOTE.md` for details.
+
+### Use Variance Rates by Period (Reliable Data: 2007-2019):
 - **Pre-Reform (2007-2012)**: 72.1% of appeals involved use variances
-- **Original Study (2012-2017)**: 69.6% (slight improvement)
-- **Extension (2017-2026)**: **20.1%** ⬇️ **72% REDUCTION**
+- **Original Study (2012-2017)**: 69.6% (slight decline)
+- **2017-2019 Period**: 56.5% (continuing to decline)
+
+**Trend**: Use variance rate was **declining gradually** from 72% to 57% over 12 years (2007-2019).
 
 ### What Happened in 2020?
-Starting in 2020, use variance appeals **virtually disappeared** (dropped from 56-73% to 0-1%):
+**We lost the ability to measure this.** The apparent "drop to 0%" was a data artifact from database migration, NOT a policy change:
 
-| Year | Use Variance Appeals | % of Year's Appeals |
-|------|---------------------|---------------------|
-| 2019 | 900 | 56% |
-| **2020** | **8** | **1%** ⬇️ |
-| 2021 | 0 | 0% |
-| 2022 | 0 | 0% |
-| 2023-2025 | 0-1 | 0% |
+| Year | Official Type Data Available? | Note |
+|------|------------------------------|------|
+| 2019 | ✓ Yes (79.8% of appeals) | Last reliable year |
+| **2020** | ✗ No (1.1% of appeals) | **Database migration to ECLIPSE** |
+| 2021+ | ✗ No (0% of appeals) | No official classification available |
 
-**This suggests a major code reform or policy change in 2020 that expanded permitted uses dramatically.**
+**We cannot determine if use variances actually changed post-2019** - the data simply isn't available in the new system.
 
 ---
 
