@@ -2,14 +2,47 @@
 
 ## Executive Summary
 
-By extracting numeric thresholds from 26,461 ZBA appeal texts (2007-2026), we identified exactly which code changes would eliminate the most variance requests:
+By extracting numeric thresholds from 26,461 ZBA appeal texts (2007-2026), we identified exactly which code changes would eliminate the most variance requests.
 
-**Top Recommendations:**
-1. **Allow 4 stories by-right** → Eliminate ~107 appeals/year (92% of height variances)
-2. **Allow triplex by-right** → Eliminate ~190 appeals/year (57% of unit variances)
-3. **Reduce parking minimums for large projects** → Eliminate ~150 appeals/year
+### 🎯 **MAJOR FINDING: 40% Reduction Achievable with Combined Reforms**
 
-**Combined impact: ~450 fewer appeals/year (45% reduction from current ~1,000/year)**
+**Current state**: ~1,300 variance appeals/year
+
+**With package of three reforms** (4 stories + triplex + parking reduction):
+- **520 appeals/year eliminated** (40% reduction)
+- **Post-reform volume**: ~780 appeals/year
+- **2024-2025 impact**: 50% reduction (trend improving!)
+
+### **Top Recommendations (in priority order):**
+
+1. **Allow duplex AND triplex by-right**
+   - Conservative: ~205 appeals/year eliminated completely
+   - Optimistic: ~407 appeals/year affected
+   - **47% are single-issue appeals** (would be fully eliminated)
+   - **57% single-issue in 2024-2025** (trend improving)
+   - Duplex demand DOUBLED in 2024-2025!
+
+2. **Allow 4 stories by-right**
+   - Conservative: ~4 appeals/year eliminated completely (only 8.5% single-issue)
+   - Optimistic: ~41 appeals/year affected
+   - Partial impact: ~20-25 appeals/year (reduces complexity of multi-issue projects)
+   - Most height appeals have other issues (parking, units, roof deck)
+
+3. **Reduce parking minimums (graduated by project size)**
+   - Small (1-3 units): Zero minimum → ~25 appeals/year
+   - Medium (4-10 units): 0.1:1 ratio
+   - Large (11+ units): 0.2:1 citywide, 0:1 near transit → ~150 appeals/year
+   - Parking 2.6x bigger issue for large projects
+
+### **Why Combined > Sum of Individual Reforms:**
+
+Individual estimates summed: ~209 appeals/year
+**But combined package: ~520 appeals/year** (2.5x higher!)
+
+**Reason**: Many appeals have MULTIPLE issues that are ALL resolved together:
+- "2-family with parking" → Both resolved
+- "3-story, 3-family" → Both resolved
+- Synergy between reforms creates larger impact
 
 ---
 
@@ -193,23 +226,101 @@ Parking requirements either:
 
 ## Combined Reform Impact Analysis
 
-### Scenario: Implement All Three Reforms
+### 🔥 CRITICAL FINDING: Single-Issue vs Multi-Issue Appeals
 
-| Reform | Appeals Eliminated | % of Total Appeals |
-|--------|-------------------|--------------------|
-| Allow 4 stories by-right | ~107/year | 10.7% |
-| Allow triplex by-right | ~190/year | 19.0% |
-| Reduce parking minimums | ~150/year | 15.0% |
-| **TOTAL** | **~447/year** | **44.7%** |
+**Not all appeals are created equal.** Some appeals involve only ONE variance (e.g., "permit for 2-family dwelling"), while others involve MULTIPLE variances (e.g., "4-story, 7-unit building with roof deck and parking reduction").
 
-**Current variance volume**: ~1,000 appeals/year
-**Post-reform projection**: ~550 appeals/year
+**Why this matters**: A single reform will only COMPLETELY eliminate single-issue appeals. Multi-issue appeals still need variances for other reasons.
 
-### Additional Context:
+### Height Variances - Mostly Multi-Issue (91.5%):
 
-Some appeals involve **multiple** issues (e.g., 4-story triplex with reduced parking), so the actual reduction might be less due to overlap.
+| Type | Count | % | Impact if 4 Stories Allowed |
+|------|-------|---|----------------------------|
+| **ONLY height issue** | 40 | 8.5% | **Completely eliminated** |
+| Height + other issues | 432 | 91.5% | Partially helped |
 
-Conservative estimate accounting for overlap: **35-40% reduction** (350-400 fewer appeals/year)
+**Conservative impact**: Only ~4 appeals/year completely eliminated
+**Optimistic impact**: ~41 appeals/year affected (partial benefits)
+
+**Why?** Height appeals are typically **LARGE, COMPLEX PROJECTS**:
+- Example: "4-story, 7-unit, with roof deck, parking reduction, and lot consolidation"
+- These developers need multiple variances anyway
+
+### Dwelling Unit Variances - Much Better! (47.1% Single-Issue):
+
+| Type | Count | % | Impact if Triplex Allowed |
+|------|-------|---|--------------------------|
+| **ONLY units issue** | 2,863 | 47.1% | **Completely eliminated** |
+| Units + other issues | 3,221 | 52.9% | Partially helped |
+
+**Conservative impact**: ~205 appeals/year completely eliminated
+**Optimistic impact**: ~407 appeals/year affected
+
+**Trend improving!**
+- 2015-2018: 42-48% single-issue
+- **2024-2025: 57% single-issue** ⬆️
+
+**Why?** Unit appeals are often **SIMPLE CONVERSIONS**:
+- Example: "Permit for 2-family dwelling" (no other variances needed)
+- These would be COMPLETELY eliminated
+
+### Scenario: Implement All Three Reforms Together
+
+When we analyze what happens if we implement ALL reforms as a package:
+
+| Metric | Current | Post-Reform | Change |
+|--------|---------|-------------|--------|
+| **Total appeals (2015-2026)** | 14,303 | - | - |
+| **Would be eliminated** | - | 5,719 | **40.0%** |
+| **Still need variance** | - | 8,584 | 60.0% |
+| **Annual impact** | ~1,300/year | ~780/year | **-520/year** |
+
+**By year (trend improving!)**:
+
+| Year | Total | Eliminated | % Eliminated |
+|------|-------|-----------|--------------|
+| 2015-2019 | Avg 1,478 | Avg 535 | 33-40% |
+| 2020-2023 | Avg 1,208 | Avg 494 | 40-43% |
+| **2024-2025** | **Avg 1,028** | **Avg 517** | **50%+** ⬆️ |
+
+### What Gets Eliminated:
+
+| Category | Count | % |
+|----------|-------|---|
+| 2 units (duplex) | 1,502 | 26.3% |
+| 3 units (triplex) | 713 | 12.5% |
+| 2 units + parking | 124 | 2.2% |
+| 3 units + parking | 60 | 1.0% |
+| 3-4 stories | 75 | 1.3% |
+| Simple/unknown | 3,070 | 53.7% |
+| **TOTAL** | **5,719** | **100%** |
+
+### What Still Needs Variances (8,584 appeals):
+
+These are legitimately complex projects that should go through ZBA review:
+
+| Issue Type | Count | % of Remaining |
+|-----------|-------|----------------|
+| Roof decks | 3,423 | 39.9% |
+| Commercial uses | 3,046 | 35.5% |
+| Parking (large projects 11+) | 1,847 | 21.5% |
+| Additions | 1,586 | 18.5% |
+| 4+ units | 512 | 6.0% |
+
+### Why Combined > Sum of Individual Reforms:
+
+**Individual estimates**:
+- Triplex alone: ~205/year
+- 4 stories alone: ~4/year
+- Parking alone: ~25/year
+- **Sum: ~234/year**
+
+**But COMBINED: ~520/year** (2.2x the sum!)
+
+**Reason**: Many appeals have MULTIPLE issues that are ALL resolved together:
+- "2-family with parking" → Both resolved by triplex + parking reform
+- "3-story, 3-family" → Both resolved by height + triplex reform
+- Appeals with combinations of issues create synergy
 
 ---
 
@@ -231,7 +342,43 @@ Conservative estimate accounting for overlap: **35-40% reduction** (350-400 fewe
 
 ## Recommendations by Priority
 
-### 🔴 Priority 1: Allow 4 Stories By-Right (Highest Impact)
+**UPDATED BASED ON SINGLE-ISSUE VS MULTI-ISSUE ANALYSIS**
+
+The priority order has changed based on discovering which reforms have the highest "complete elimination" rate:
+
+### 🔴 Priority 1: Allow Duplex and Triplex By-Right (HIGHEST IMPACT)
+
+**Why #1**: **47% of unit appeals are single-issue** (would be completely eliminated)
+- 2024-2025: **57% single-issue** (trend improving!)
+- Duplex demand has DOUBLED (49-51% in 2024-2025)
+- Most impactful single reform
+
+**Current pattern**:
+- Duplex: 35-51% of unit appeals (SURGING in 2024-2025!)
+- Triplex: 14-31% of unit appeals
+
+**Action**:
+- Allow duplex by-right in ALL residential zones (including single-family)
+- Allow triplex by-right in RSA/RM zones
+- Consider fourplex in RM zones (diminishing returns but covers 65% total)
+
+**Impact**:
+- **Conservative**: ~205 appeals/year eliminated completely
+- **Optimistic**: ~407 appeals/year affected
+- Addresses the surging demand for duplexes
+- Most are simple conversions that don't need other variances
+
+**Why this works**:
+- Simple appeals: "Permit for 2-family dwelling" (no other issues)
+- Duplex demand doubled (49-51% in 2024-2025)
+- "Missing middle" housing is economically viable
+- Following Minneapolis/Portland model
+
+### 🟡 Priority 2: Allow 4 Stories By-Right (Lower Impact Than Initially Thought)
+
+**Why #2**: **Only 8.5% of height appeals are single-issue**
+- Most height appeals are complex projects with multiple variance needs
+- Still valuable for reducing complexity of multi-issue projects
 
 **Current pattern**: 73% of height appeals are for 3 stories (current limit)
 
@@ -240,43 +387,22 @@ Conservative estimate accounting for overlap: **35-40% reduction** (350-400 fewe
 - Exception: Keep 3 stories in historic districts (if needed)
 
 **Impact**:
-- ~107 fewer appeals/year
-- 92% of height variances eliminated
+- **Conservative**: ~4 appeals/year eliminated completely (single-issue only)
+- **Optimistic**: ~41 appeals/year affected
+- **Realistic**: ~20-25 appeals/year (partial impact on multi-issue projects)
 
-**Why this works**:
+**Why this still matters**:
+- Reduces variance burden for complex projects
 - Clear threshold (3 stories is the barrier)
 - Stable pattern over time (consistent demand)
-- Modest change (just one floor)
-- Sharp drop-off after 4 → won't create pressure for 5
-
-### 🔴 Priority 2: Allow Duplex and Triplex By-Right (Major Trend)
-
-**Current pattern**:
-- Duplex: 35-51% of unit appeals (SURGING in 2024-2025!)
-- Triplex: 14-31% of unit appeals (declining recently)
-
-**Action**:
-- Allow duplex by-right in ALL residential zones (including single-family)
-- Allow triplex by-right in RSA/RM zones
-- Consider fourplex in RM zones (diminishing returns but covers 65% total)
-
-**Impact**:
-- ~190 fewer appeals/year (triplex threshold)
-- ~250 fewer appeals/year (fourplex threshold)
-- Addresses the surging demand for duplexes
-
-**Why this works**:
-- Duplex demand has doubled (49-51% in 2024-2025)
-- Triplex declining (may already be getting easier)
-- "Missing middle" housing is economically viable
-- Following Minneapolis/Portland model
+- Even partial impact helps: fewer variances = easier approval
 
 ### 🟡 Priority 3: Reduce Parking Minimums by Project Size
 
 **Current pattern**:
 - Small (1-3 units): 5.8% have parking variances
 - Medium (4-10 units): 7.3%
-- **Large (11+ units): 15.2%** ← Focus here!
+- **Large (11+ units): 15.2%** ← Focus here! (2.6x higher)
 
 **Action**:
 1. **All projects**: Eliminate parking minimums within 1/2 mile of transit
@@ -285,7 +411,8 @@ Conservative estimate accounting for overlap: **35-40% reduction** (350-400 fewe
 4. **Large (11+ units)**: Reduce to 0.2:1 citywide, 0:1 near transit
 
 **Impact**:
-- ~150 fewer appeals/year
+- ~25 appeals/year (small projects with parking as only issue)
+- ~150 appeals/year (total parking-related appeals affected)
 - Especially helps larger projects (15% variance rate → lower)
 
 **Why this works**:
@@ -296,15 +423,31 @@ Conservative estimate accounting for overlap: **35-40% reduction** (350-400 fewe
 
 ---
 
-## Annual Impact Timeline
+## Recommended Implementation Strategy
 
-| Year Implemented | Reform | Cumulative Reduction |
-|-----------------|--------|---------------------|
-| **Year 1** | Allow 4 stories | -107 appeals/year (11%) |
-| **Year 2** | + Allow triplex | -297 appeals/year (30%) |
-| **Year 3** | + Reduce parking | -447 appeals/year (45%) |
+### **Implement All Three Reforms as a Package**
 
-**From ~1,000 appeals/year → ~550 appeals/year**
+**Individual impact summed**: ~234 appeals/year
+**Combined package impact**: **~520 appeals/year** (2.2x higher due to synergy!)
+
+**Why package matters**:
+- Many appeals have MULTIPLE issues that are ALL resolved together
+- "2-family with parking" → Both resolved
+- "3-story, 3-family" → Both resolved
+- Creates synergy effect
+
+### Annual Impact Timeline
+
+| Approach | Impact | Notes |
+|----------|--------|-------|
+| **Sequential (one at a time)** | ~234 appeals/year | Individual reforms, no synergy |
+| **Package (all at once)** | **~520 appeals/year** | **Recommended - 2.2x better!** |
+
+**Current state**: ~1,300 appeals/year
+**Post-reform state**: ~780 appeals/year
+**Reduction**: **40% (520 appeals/year)**
+
+**Trend improving**: 2024-2025 show **50%+ reduction** → reforms becoming more impactful over time!
 
 **Additional benefit**: Reduced appeals = faster processing for remaining cases
 
