@@ -1,0 +1,76 @@
+================================================================================
+ADVANCED THRESHOLD ANALYSIS
+================================================================================
+================================================================================
+THRESHOLD TRENDS OVER TIME
+================================================================================
+
+Fetching appeals...
+
+HEIGHT VARIANCE TRENDS (3-story and 4-story appeals by year):
+Year    Total Height   3-story      %   4-story      %
+--------------------------------------------------------------------------------
+2015              32        23    72%         1     3%
+2016              49        39    80%         8    16%
+2017              64        46    72%        12    19%
+2018              64        40    62%        18    28%
+2019              53        40    75%         7    13%
+2020              49        32    65%         9    18%
+2021              56        42    75%         9    16%
+2022              23        13    57%         2     9%
+2023              19        12    63%         3    16%
+2024              40        28    70%         4    10%
+2025              22        12    55%         5    23%
+2026               1         0     0%         1   100%
+
+DWELLING UNIT VARIANCE TRENDS (2-3-4 family by year):
+Year    Total Units   2-fam     %   3-fam     %   4-fam     %
+--------------------------------------------------------------------------------
+2015            252      62   25%      78   31%      30   12%
+2016            291     100   34%      50   17%      29   10%
+2017            337     130   39%      58   17%      23    7%
+2018            362     137   38%      66   18%      32    9%
+2019            327     100   31%      60   18%      22    7%
+2020            303     102   34%      80   26%      20    7%
+2021            501     168   34%     130   26%      47    9%
+2022            386     111   29%     101   26%      34    9%
+2023            285     101   35%      55   19%      31   11%
+2024            269     133   49%      51   19%      25    9%
+2025            264     135   51%      37   14%      14    5%
+2026              9       1   11%       1   11%       1   11%
+
+================================================================================
+PARKING VARIANCE BY PROJECT SIZE
+================================================================================
+
+Fetching parking appeals...
+
+Parking variances by project size (sample of 2,000 appeals):
+  Small (1-3 units):     115 (  5.8%)
+  Medium (4-10 units):   147 (  7.3%)
+  Large (11+ units):     304 ( 15.2%)
+  Unknown size:         1,434 ( 71.7%)
+
+Hypothesis test: Is parking more of an issue for larger projects?
+  ✓ YES - Large projects have more parking variances
+
+================================================================================
+BY-RIGHT PERMIT ANALYSIS
+Question: Do developers build exactly to minimum parking requirements?
+================================================================================
+
+Fetching by-right zoning permits (2020-2023)...
+Loaded 5000 by-right permits
+
+By-right permits with parking mentions: 164 (3.3%)
+Explicitly mentioning zero parking: 0
+Permits with unit counts: 0
+
+Note: By-right permits typically don't specify parking counts in text
+This data is more commonly in separate permit records or not digitized
+
+Analyzing by project description...
+
+Multifamily by-right permits: 490
+  Mentioning parking: 21 (4.3%)
+  NOT mentioning parking: 469 (95.7%)
