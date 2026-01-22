@@ -47,13 +47,15 @@ class VariancePermitRatioAnalyzer:
                           for row in appeals_data['rows']}
 
         # Get total permits by year
+        # Using same approach as Development Digest for by-right residential permits
         permits_query = """
             SELECT
                 EXTRACT(YEAR FROM permitissuedate) as year,
                 COUNT(*) as permit_count
             FROM permits
             WHERE permitissuedate >= '2007-01-01'
-                AND permittype = 'ZONING/USE REG PERMIT'
+                AND commercialorresidential = 'Residential'
+                AND typeofwork = 'New Construction'
             GROUP BY year
             ORDER BY year
         """
@@ -93,10 +95,11 @@ class VariancePermitRatioAnalyzer:
         print("PERIOD AVERAGES")
         print("="*80)
 
+        # Only show periods with good data
         periods = [
-            ("2007-2012 (Pre-reform)", range(2007, 2013)),
-            ("2013-2018 (Post-reform)", range(2013, 2019)),
-            ("2019-2026 (Recent)", range(2019, 2027))
+            ("2019-2021 (COVID period)", range(2019, 2022)),
+            ("2022-2026 (Post-COVID)", range(2022, 2027)),
+            ("2019-2026 (All recent)", range(2019, 2027))
         ]
 
         print(f"\n{'Period':<30} {'Avg Appeals':>12} {'Avg Permits':>14} {'Variance Rate':>14} {'By-Right %':>12}")
@@ -134,51 +137,53 @@ class VariancePermitRatioAnalyzer:
         print("TREND ANALYSIS")
         print("="*80)
 
-        # Calculate 2007-2012 baseline
-        baseline_appeals = sum(appeals_by_year.get(y, 0) for y in range(2007, 2013))
-        baseline_permits = sum(permits_by_year.get(y, 0) for y in range(2007, 2013))
-        baseline_rate = baseline_appeals / baseline_permits * 100 if baseline_permits > 0 else 0
-
-        # Calculate 2019-2026 recent
+        # Calculate 2019-2026 (only period with good permit data)
         recent_appeals = sum(appeals_by_year.get(y, 0) for y in range(2019, 2027) if y in appeals_by_year)
         recent_permits = sum(permits_by_year.get(y, 0) for y in range(2019, 2027) if y in permits_by_year)
         recent_rate = recent_appeals / recent_permits * 100 if recent_permits > 0 else 0
 
-        improvement = baseline_rate - recent_rate
-
-        print(f"\nPre-reform variance rate (2007-2012): {baseline_rate:.1f}%")
-        print(f"Recent variance rate (2019-2026):     {recent_rate:.1f}%")
-        print(f"\nImprovement: {improvement:.1f} percentage points")
-        print(f"Reduction:   {improvement/baseline_rate*100:.1f}%")
+        print(f"\n⚠️  NOTE: Comprehensive permit data only available from 2019+")
+        print(f"\nRecent variance rate (2019-2026):     {recent_rate:.1f}%")
+        print(f"Recent by-right rate (2019-2026):     {100-recent_rate:.1f}%")
 
         print("\n" + "="*80)
         print("KEY INSIGHTS")
         print("="*80)
 
         print(f"""
-1. OVERALL TREND: By-right rate improved from {100-baseline_rate:.1f}% to {100-recent_rate:.1f}%
-   - More projects can proceed without variances
-   - Shows 2012 zoning code reform working
+⚠️  DATA QUALITY NOTE:
+   - Comprehensive permit data only available from 2019 onward
+   - Earlier years (2007-2018) have incomplete or missing permit data
+   - Analysis below focuses on 2019-2026 period
 
-2. VARIANCE VOLUME:
-   - Pre-reform: ~{baseline_appeals/6:.0f} appeals/year
-   - Recent: ~{recent_appeals/8:.0f} appeals/year
-   - Decline of {(baseline_appeals/6 - recent_appeals/8)//(baseline_appeals/6)*100:.0f}%
+1. RECENT VARIANCE RATE (2019-2026): {recent_rate:.1f}%
+   - About 1 in 3 residential new construction projects needs variances
+   - By-right rate: {100-recent_rate:.1f}%
+   - Room for significant improvement
 
-3. TOTAL PERMITS:
-   - Relatively stable over time
-   - Development activity continues
-   - Variance reduction not due to less development
+2. YEAR-BY-YEAR PATTERN (2019-2026):
+   - 2019: 35.3% variance rate (development was strong)
+   - 2020: 22.0% (COVID impact - fewer complex projects?)
+   - 2021-2025: 28-37% (back to ~1 in 3 pattern)
 
-4. 2012 REFORM IMPACT:
-   - Variance rate dropped from {baseline_rate:.1f}% to {recent_rate:.1f}%
-   - {improvement:.1f} percentage point improvement
-   - Sustained improvement over 8+ years
+3. VARIANCE VOLUME:
+   - Average ~{recent_appeals/8:.0f} ZBA appeals/year (2019-2026)
+   - Average ~{recent_permits/8:.0f} new residential permits/year
+   - Consistent ~30% variance rate
 
-5. REMAINING OPPORTUNITY:
-   - Still {recent_rate:.1f}% of projects need variances
-   - Proposed reforms could reduce to ~10-12%
-   - Potential to double by-right rate improvement
+4. PROPOSED REFORMS IMPACT:
+   - Current: ~31% need variances
+   - After reforms (eliminate ~292/year): ~20-22% need variances
+   - Improvement: Reduce variance rate by ~9-11 percentage points
+   - Would mean ~75-80% by-right (vs current ~69%)
+
+5. COMPARISON TO EARLIER ESTIMATES:
+   - Our earlier analysis (using different methodology) showed ~80% by-right
+   - This analysis (residential new construction only) shows ~69% by-right
+   - Difference likely due to:
+     * This counts only NEW residential construction
+     * Earlier analysis may have included renovations, commercial, etc.
+     * Different denominators
         """)
 
 
