@@ -1,0 +1,109 @@
+====================================================================================================
+VARIANCE RATE BY ZONING DISTRICT ANALYSIS
+====================================================================================================
+
+Step 1: Getting list of zoning districts...
+✓ Found 39 unique zoning districts
+  Total parcels: 21,392
+
+Top 20 zoning districts by parcel count:
+Code            Group                        Parcels
+-------------------------------------------------------
+RSA-5           Residential/Residential Mixed-Use      8,728
+CMX-2           Commercial/Commercial Mixed-Use      4,065
+RM-1            Residential/Residential Mixed-Use      3,771
+CMX-1           Commercial/Commercial Mixed-Use      3,129
+RSA-3           Residential/Residential Mixed-Use      2,544
+SP-PO-A         Special Purpose                  806
+RSD-3           Residential/Residential Mixed-Use        710
+CMX-2.5         Commercial/Commercial Mixed-Use        650
+RSA-2           Residential/Residential Mixed-Use        609
+ICMX            Industrial/Industrial Mixed-Use        571
+I-2             Industrial/Industrial Mixed-Use        517
+CMX-3           Commercial/Commercial Mixed-Use        461
+RSD-1           Residential/Residential Mixed-Use        330
+RM-2            Residential/Residential Mixed-Use        263
+RTA-1           Residential/Residential Mixed-Use        244
+CA-1            Commercial/Commercial Mixed-Use        233
+CMX-4           Commercial/Commercial Mixed-Use        216
+RSA-4           Residential/Residential Mixed-Use        199
+CMX-5           Commercial/Commercial Mixed-Use        171
+IRMX            Industrial/Industrial Mixed-Use        134
+
+Step 2: Linking 2024 appeals to zoning (sample year)...
+  Trying direct parcel_id match...
+  Attempt 1/3 failed: HTTPSConnectionPool(host='phl.carto.com', port=443): Read timed out. (read timeout=60)
+  Attempt 2/3 failed: HTTPSConnectionPool(host='phl.carto.com', port=443): Read timed out. (read timeout=60)
+  Attempt 3/3 failed: HTTPSConnectionPool(host='phl.carto.com', port=443): Read timed out. (read timeout=60)
+
+  Testing joins for 2024 appeals...
+  Approach A: Join on addressobjectid = objectid...
+  SQL Error: ['operator does not exist: text = integer']
+    ✗ Query failed
+  Approach B: Spatial join with ST_Within (slower)...
+    ✓ Matched 1060 appeals
+    SUCCESS! Using: ST_Within(a.the_geom, z.the_geom)
+
+Step 3: Getting 2024 appeals by zoning district using: ST_Within(a.the_geom, z.the_geom)...
+✓ Got appeals for 30 zoning districts
+
+====================================================================================================
+2024 VARIANCE RATE BY ZONING DISTRICT
+====================================================================================================
+
+Top 30 zoning districts by variance rate:
+Code            Group                      Appeals  Parcels   Rate %
+---------------------------------------------------------------------------
+CMX-1           Commercial/Commercial Mixed-Use       57        1 5700.00%
+RM-1            Residential/Residential Mixed-Use      109        4 2725.00%
+SP-INS          Special Purpose                  8        1  800.00%
+SP-PO-A         Special Purpose                  4        2  200.00%
+RMX-2           Residential/Residential Mixed-Use        2       13   15.38%
+CMX-5           Commercial/Commercial Mixed-Use       21      171   12.28%
+CA-2            Commercial/Commercial Mixed-Use        9       83   10.84%
+I-2             Industrial/Industrial Mixed-Use       41      517    7.93%
+RTA-1           Residential/Residential Mixed-Use       14      244    5.74%
+CA-1            Commercial/Commercial Mixed-Use       12      233    5.15%
+RSA-5           Residential/Residential Mixed-Use      446    8,728    5.11%
+CMX-2.5         Commercial/Commercial Mixed-Use       33      650    5.08%
+I-3             Industrial/Industrial Mixed-Use        3       62    4.84%
+CMX-4           Commercial/Commercial Mixed-Use       10      216    4.63%
+IRMX            Industrial/Industrial Mixed-Use        6      134    4.48%
+ICMX            Industrial/Industrial Mixed-Use       24      571    4.20%
+RSA-3           Residential/Residential Mixed-Use       89    2,544    3.50%
+RSA-2           Residential/Residential Mixed-Use       21      609    3.45%
+I-1             Industrial/Industrial Mixed-Use        4      118    3.39%
+CMX-3           Commercial/Commercial Mixed-Use       15      461    3.25%
+CMX-2           Commercial/Commercial Mixed-Use      100    4,065    2.46%
+RSD-3           Residential/Residential Mixed-Use       15      710    2.11%
+RSA-4           Residential/Residential Mixed-Use        4      199    2.01%
+RSA-1           Residential/Residential Mixed-Use        2      106    1.89%
+RSA-6           Residential/Residential Mixed-Use        1       53    1.89%
+RSD-1           Residential/Residential Mixed-Use        6      330    1.82%
+RMX-3           Residential/Residential Mixed-Use        1       68    1.47%
+RSD-2           Residential/Residential Mixed-Use        1       80    1.25%
+RM-4            Residential/Residential Mixed-Use        1       82    1.22%
+RM-2            Residential/Residential Mixed-Use        1      263    0.38%
+
+
+====================================================================================================
+VARIANCE RATE BY ZONING GROUP
+====================================================================================================
+
+Zoning Group                    Appeals    Parcels   Rate %
+-----------------------------------------------------------------
+Special Purpose                      12          3  400.00%
+Industrial/Industrial Mixed-Use       78      1,402    5.56%
+Residential/Residential Mixed-Use      713     14,033    5.08%
+Commercial/Commercial Mixed-Use      257      5,880    4.37%
+
+
+====================================================================================================
+KEY INSIGHTS
+====================================================================================================
+
+This shows which zoning districts generate variances at the highest rates.
+Next steps:
+  1. Expand analysis to full 2013-2025 period
+  2. Break down variance types by zoning district
+  3. Identify which districts would benefit most from specific reforms
