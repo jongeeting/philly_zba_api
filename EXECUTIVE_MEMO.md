@@ -35,32 +35,42 @@ The discrepancy likely stems from how withdrawn applications are categorized. Ou
 
 ## Root Causes: What Drives Variance Appeals?
 
-Analysis of 16,938 variance appeals from 2013-2025 reveals five primary drivers:
+Analysis of 16,954 variance appeals from 2013-2025 reveals the primary drivers:
 
-### 1. **Roof Decks** (26.6% of recent appeals)
-The single largest variance driver. Philadelphia's restrictive accessory structure rules make roof decks require variances in most residential zones. This affects **346 appeals per year** in the 2019-2025 period.
+| Rank | Variance Type | Appeals | Per Year | % of Appeals | % of All Projects |
+|------|---------------|---------|----------|--------------|-------------------|
+| 1 | Roof decks | 4,137 | 318 | 24.4% | 4.2% |
+| 2 | Parking | 3,521 | 271 | 20.8% | 3.6% |
+| 3 | Commercial | ~3,700 | ~285 | ~22% | ~3.8% |
+| 4 | Height | 1,259 | 97 | 7.4% | 1.3% |
+| 5 | Dwelling units | 921 | 71 | 5.4% | 0.9% |
+
+*Note: Appeals can involve multiple variance types, so percentages don't sum to 100%*
+
+### 1. **Roof Decks** (24.4% of appeals, 318/year)
+The single largest variance driver. Philadelphia's restrictive accessory structure rules make roof decks require variances in most residential zones.
 
 **Policy disconnect:** Roof decks are common urban amenities that don't meaningfully impact neighbors yet consume massive ZBA resources.
 
-### 2. **Parking Requirements** (21.5% of appeals)
-Minimum parking rules force variances even when developers want to build less parking or when sites lack space for required spots. Affects **280 appeals per year**.
+### 2. **Parking** (20.8% of appeals, 271/year)
+Minimum parking rules force variances even when developers want to build less parking or when sites lack space for required spots.
 
 **Policy disconnect:** Philadelphia has excellent transit, walkability, and street parking. Mandating off-street parking increases housing costs and reduces density.
 
-### 3. **Height Limits** (15.8% of appeals)
-Many residential zones cap buildings at 35 feet (typically 3 stories), forcing developers seeking 4-story buildings to request variances. Affects **206 appeals per year**.
+### 3. **Commercial Uses** (~22% of appeals, ~285/year)
+Neighborhood commercial uses (corner stores, cafes, offices) require variances in residential zones.
+
+**Policy disconnect:** Traditional Philadelphia neighborhoods had corner stores; current zoning treats them as incompatible uses.
+
+### 4. **Height** (7.4% of appeals, 97/year)
+Many residential zones cap buildings at 35 feet (typically 3 stories), forcing developers seeking 4-story buildings to request variances. Most height variances cite "maximum height" violations rather than specifying story counts.
 
 **Policy disconnect:** Four-story buildings are compatible with urban neighborhoods and common in successful Philadelphia corridors.
 
-### 4. **Dwelling Unit Density** (12.8% of appeals)
-Single-family zoning and restrictive density limits prevent duplexes, triplexes, and small apartment buildings. Affects **167 appeals per year**.
+### 5. **Dwelling Unit Density** (5.4% of appeals, 71/year)
+Single-family zoning and restrictive density limits prevent duplexes, triplexes, and small apartment buildings.
 
 **Policy disconnect:** "Missing middle" housing types provide naturally affordable options and match Philadelphia's historic building patterns.
-
-### 5. **Commercial/Mixed-Use Restrictions** (7.9% of appeals)
-Neighborhood commercial uses (corner stores, cafes, offices) require variances in residential zones. Affects **103 appeals per year**.
-
-**Policy disconnect:** Traditional Philadelphia neighborhoods had corner stores; current zoning treats them as incompatible uses.
 
 ---
 
@@ -115,8 +125,9 @@ Pennsylvania has pending "missing middle" housing bills that would require munic
 ## Methodology and Data Quality
 
 **Data source:** Philadelphia CARTO open data API
-**Variance appeals:** 23,487 appeals (2007-2025)
-**Zoning permits:** 93,681 permits (2007-2025)
+**Variance appeals:** 16,954 appeals (2013-2025)
+**Zoning permits:** 81,617 permits (2013-2025)
+**Total projects:** 98,571
 **Analysis period:** Post-reform (2013-2025) for impact assessment
 
 **Validation:** Our methodology matches the city's own 5-year report data within 0.5 percentage points, providing confidence in findings.
