@@ -1,0 +1,159 @@
+====================================================================================================
+COMPLETE VARIANCE GENERATOR ANALYSIS (2013-2025)
+WITH CORRECTED HEIGHT DETECTION
+====================================================================================================
+
+Phase 1: Counting variance types using SQL aggregation...
+
+Getting total appeals...
+✓ Total appeals: 16,954
+
+Getting total permits...
+✓ Total permits: 81,617
+
+✓ Total projects: 98,571
+
+Counting variance types...
+✓ roof_deck: 4,137
+✓ parking: 3,521
+✓ height: 1,259
+  Timeout, retrying in 1s...
+  Timeout, retrying in 2s...
+✗ commercial: Error - HTTPSConnectionPool(host='phl.carto.com', port=443): Read timed out. (read timeout=45)
+✓ dwelling_units: 921
+✓ setback: 91
+✓ lot_coverage: 2
+✓ accessory_structure: 186
+
+====================================================================================================
+TOP VARIANCE GENERATORS (CORRECTED)
+====================================================================================================
+
+| Variance Type | Appeals | Per Year | % of Appeals | % of All Projects |
+|---------------|---------|----------|--------------|-------------------|
+| Roof Deck             |   4,137 |      318 |        24.4% |              4.2% |
+| Parking               |   3,521 |      271 |        20.8% |              3.6% |
+| Height                |   1,259 |       97 |         7.4% |              1.3% |
+| Dwelling Units        |     921 |       71 |         5.4% |              0.9% |
+| Accessory Structure   |     186 |       14 |         1.1% |              0.2% |
+| Setback               |      91 |        7 |         0.5% |              0.1% |
+| Lot Coverage          |       2 |        0 |         0.0% |              0.0% |
+| Commercial            |       0 |        0 |         0.0% |              0.0% |
+
+**Note:** Appeals can have multiple variance types, so percentages don't sum to 100%
+
+====================================================================================================
+Phase 2: Detailed threshold analysis (sampling data)
+====================================================================================================
+
+Fetching sample of appeals for threshold analysis...
+✓ Got 976 appeals with explicit height/unit values
+
+====================================================================================================
+HEIGHT THRESHOLD ANALYSIS
+====================================================================================================
+
+**IMPORTANT:** Only 68 appeals explicitly state 'X stories'
+But 1,259 appeals mention 'height' in some form (7.4%)
+This means most height issues are expressed as 'maximum height' violations, not story counts
+
+| Max Stories | Appeals | Cumulative | % of Explicit Height |
+|-------------|---------|------------|----------------------|
+|           1 |      15 |         15 |                22.1% |
+|           2 |      12 |         27 |                39.7% |
+|           3 |      35 |         62 |                91.2% |
+|           4 |       1 |         63 |                92.6% |
+|           5 |       1 |         64 |                94.1% |
+|           6 |       1 |         65 |                95.6% |
+|          11 |       1 |         66 |                97.1% |
+|          14 |       1 |         67 |                98.5% |
+|          15 |       1 |         68 |               100.0% |
+
+**Recommendations for height thresholds:**
+  - Allow 3 stories → resolves 50% of explicit 'X stories' variances
+  - Allow 3 stories → resolves 75% of explicit 'X stories' variances
+  - Allow 3 stories → resolves 90% of explicit 'X stories' variances
+
+====================================================================================================
+DWELLING UNIT THRESHOLD ANALYSIS
+====================================================================================================
+
+| Max Units | Appeals | Cumulative | % Resolved |
+|-----------|---------|------------|------------|
+|         1 |       6 |          6 |       0.7% |
+|         2 |      22 |         28 |       3.3% |
+|         3 |     247 |        275 |      32.9% |
+|         4 |     108 |        383 |      45.8% |
+|         5 |      43 |        426 |      51.0% |
+|         6 |      58 |        484 |      57.9% |
+|         7 |      22 |        506 |      60.5% |
+|         8 |      21 |        527 |      63.0% |
+|         9 |       4 |        531 |      63.5% |
+|        10 |      15 |        546 |      65.3% |
+|        11 |       8 |        554 |      66.3% |
+|        12 |      24 |        578 |      69.1% |
+|        13 |       4 |        582 |      69.6% |
+|        14 |      14 |        596 |      71.3% |
+|        15 |      11 |        607 |      72.6% |
+
+**Recommendations:**
+  - Allow 5 units → resolves 50% of dwelling unit variances
+  - Allow 18 units → resolves 75% of dwelling unit variances
+
+====================================================================================================
+REFORM SCENARIO: COMPREHENSIVE PACKAGE
+====================================================================================================
+
+Scenario: 4 Stories + No Parking + Roof Decks + Commercial + Fourplex
+
+Fetching all appeals for detailed reform impact analysis...
+  Fetching 2013...
+  Fetching 2014...
+  Fetching 2015...
+  Fetching 2016...
+  Fetching 2017...
+  Fetching 2018...
+  Fetching 2019...
+  Fetching 2020...
+  Fetching 2021...
+  Fetching 2022...
+  Fetching 2023...
+  Fetching 2024...
+  Fetching 2025...
+✓ Fetched 16,954 appeals
+
+**Appeals completely eliminated:** 7,776 (45.9%)
+**Appeals partially helped:** 1,279 (7.5%)
+**Total appeals impacted:** 9,055 (53.4%)
+
+**Reduction in ZBA caseload:** 598 appeals/year
+
+**Current by-right rate:** 82.8%
+**New by-right rate:** 89.9%
+**Improvement:** +7.1 percentage points
+
+====================================================================================================
+FINAL RECOMMENDATIONS (CORRECTED)
+====================================================================================================
+
+**Corrected Priority Rankings:**
+
+1. **ROOF DECKS** - 4,137 appeals (24.4%), ~318/year
+   Recommendation: Allow roof decks by-right
+
+2. **PARKING** - 3,521 appeals (20.8%), ~271/year
+   Recommendation: Eliminate parking minimums citywide
+
+3. **COMMERCIAL** - 0 appeals (0.0%), ~0/year
+   Recommendation: Expand neighborhood commercial allowances
+
+4. **HEIGHT** - 1,259 appeals (7.4%), ~97/year
+   Recommendation: Allow 4 stories (45-48 feet) by-right
+   Note: Only 68 explicitly state story count, most say 'maximum height'
+
+5. **DWELLING UNITS** - 921 appeals (5.4%), ~71/year
+   Recommendation: Allow fourplexes (4 units) by-right
+
+**COMBINED IMPACT:** These five reforms would eliminate ~598 appeals/year
+and improve by-right rate from 82.8% to 89.9%
+
