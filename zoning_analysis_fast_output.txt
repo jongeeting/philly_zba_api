@@ -1,0 +1,289 @@
+====================================================================================================
+FAST ZONING DISTRICT ANALYSIS (2013-2025)
+====================================================================================================
+
+Phase 1: Getting appeal counts by district...
+
+Executing spatial join query (this may take a few minutes)...
+✓ Got 391 year-district records
+
+====================================================================================================
+ZONING DISTRICTS RANKED BY APPEAL VOLUME (2013-2025)
+====================================================================================================
+
+Rank Code            Group                                  Total  Per Year
+----------------------------------------------------------------------------------------------------
+   1 RSA-5           Residential/Residential Mixed-Use      6,892     530.2 (41.2%)
+   2 RM-1            Residential/Residential Mixed-Use      2,074     159.5 (12.4%)
+   3 CMX-2           Commercial/Commercial Mixed-Use        1,757     135.2 (10.5%)
+   4 RSA-3           Residential/Residential Mixed-Use      1,250      96.2 ( 7.5%)
+   5 CMX-1           Commercial/Commercial Mixed-Use          778      59.8 ( 4.7%)
+   6 CMX-2.5         Commercial/Commercial Mixed-Use          562      43.2 ( 3.4%)
+   7 I-2             Industrial/Industrial Mixed-Use          456      35.1 ( 2.7%)
+   8 CMX-3           Commercial/Commercial Mixed-Use          429      33.0 ( 2.6%)
+   9 ICMX            Industrial/Industrial Mixed-Use          352      27.1 ( 2.1%)
+  10 RSD-3           Residential/Residential Mixed-Use        283      21.8 ( 1.7%)
+  11 CMX-5           Commercial/Commercial Mixed-Use          259      19.9 ( 1.5%)
+  12 CMX-4           Commercial/Commercial Mixed-Use          226      17.4 ( 1.4%)
+  13 RSA-2           Residential/Residential Mixed-Use        186      14.3 ( 1.1%)
+  14 CA-1            Commercial/Commercial Mixed-Use          170      13.1 ( 1.0%)
+  15 RTA-1           Residential/Residential Mixed-Use        169      13.0 ( 1.0%)
+  16 IRMX            Industrial/Industrial Mixed-Use          140      10.8 ( 0.8%)
+  17 I-1             Industrial/Industrial Mixed-Use          115       8.8 ( 0.7%)
+  18 RSD-1           Residential/Residential Mixed-Use        103       7.9 ( 0.6%)
+  19 CA-2            Commercial/Commercial Mixed-Use           96       7.4 ( 0.6%)
+  20 RSA-4           Residential/Residential Mixed-Use         58       4.5 ( 0.3%)
+  21 RM-2            Residential/Residential Mixed-Use         56       4.3 ( 0.3%)
+  22 RMX-3           Residential/Residential Mixed-Use         53       4.1 ( 0.3%)
+  23 SP-INS          Special Purpose                           50       3.8 ( 0.3%)
+  24 RSA-1           Residential/Residential Mixed-Use         48       3.7 ( 0.3%)
+  25 RM-4            Residential/Residential Mixed-Use         39       3.0 ( 0.2%)
+  26 SP-PO-A         Special Purpose                           34       2.6 ( 0.2%)
+  27 I-3             Industrial/Industrial Mixed-Use           28       2.2 ( 0.2%)
+  28 RSD-2           Residential/Residential Mixed-Use         14       1.1 ( 0.1%)
+  29 RSA-6           Residential/Residential Mixed-Use         13       1.0 ( 0.1%)
+  30 RMX-2           Residential/Residential Mixed-Use         12       0.9 ( 0.1%)
+
+Total appeals matched: 16,723
+
+====================================================================================================
+BY ZONING GROUP
+====================================================================================================
+
+Group                                     Appeals  Per Year % of Total
+---------------------------------------------------------------------------
+Residential/Residential Mixed-Use          11,262     866.3      67.3%
+Commercial/Commercial Mixed-Use             4,277     329.0      25.6%
+Industrial/Industrial Mixed-Use             1,091      83.9       6.5%
+Special Purpose                                93       7.2       0.6%
+
+====================================================================================================
+TOP 5 DISTRICTS - YEAR BY YEAR TRENDS
+====================================================================================================
+
+1. RSA-5 (Residential/Residential Mixed-Use)
+   Total: 6,892 appeals (530.2/year)
+
+     Year   Appeals
+   ------------------
+     2013       500
+     2014       505
+     2015       478
+     2016       565
+     2017       662
+     2018       654
+     2019       698
+     2020       484
+     2021       595
+     2022       512
+     2023       427
+     2024       446
+     2025       366
+
+   Trend: 560.7/year (2013-2018) → 504.0/year (2019-2025)
+   Change: -10.1%
+
+2. RM-1 (Residential/Residential Mixed-Use)
+   Total: 2,074 appeals (159.5/year)
+
+     Year   Appeals
+   ------------------
+     2013       178
+     2014       178
+     2015       171
+     2016       184
+     2017         1
+     2018         1
+     2019         3
+     2020         1
+     2021       181
+     2022         2
+     2023       109
+     2024       109
+     2025        92
+
+   Trend: 118.8/year (2013-2018) → 71.0/year (2019-2025)
+   Change: -40.3%
+
+3. CMX-2 (Commercial/Commercial Mixed-Use)
+   Total: 1,757 appeals (135.2/year)
+
+     Year   Appeals
+   ------------------
+     2013       156
+     2014       156
+     2015       126
+     2016       159
+     2017       167
+     2018       144
+     2019       150
+     2020       107
+     2021       152
+     2022       140
+     2023       104
+     2024       100
+     2025        96
+
+   Trend: 151.3/year (2013-2018) → 121.3/year (2019-2025)
+   Change: -19.9%
+
+4. RSA-3 (Residential/Residential Mixed-Use)
+   Total: 1,250 appeals (96.2/year)
+
+     Year   Appeals
+   ------------------
+     2013        74
+     2014        77
+     2015        92
+     2016       106
+     2017        98
+     2018        87
+     2019       120
+     2020        94
+     2021       112
+     2022       111
+     2023        96
+     2024        89
+     2025        94
+
+   Trend: 89.0/year (2013-2018) → 102.3/year (2019-2025)
+   Change: +14.9%
+
+5. CMX-1 (Commercial/Commercial Mixed-Use)
+   Total: 778 appeals (59.8/year)
+
+     Year   Appeals
+   ------------------
+     2013        53
+     2014        71
+     2015        73
+     2016        70
+     2017        56
+     2018        64
+     2019        68
+     2020        35
+     2021        55
+     2022        65
+     2023        57
+     2024        57
+     2025        54
+
+   Trend: 64.5/year (2013-2018) → 55.9/year (2019-2025)
+   Change: -13.4%
+
+====================================================================================================
+Phase 2: Analyzing variance types for top districts
+====================================================================================================
+
+Sampling recent appeals to identify variance patterns...
+
+1. Analyzing RSA-5...
+   Sample: 1751 appeals (2022-2025)
+Traceback (most recent call last):
+  File "/home/user/philly_zba_api/zoning_analysis_fast.py", line 188, in <module>
+    roof_deck = sum(1 for a in appeals if 'roof deck' in a.get('appealgrounds', '').lower())
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/philly_zba_api/zoning_analysis_fast.py", line 188, in <genexpr>
+    roof_deck = sum(1 for a in appeals if 'roof deck' in a.get('appealgrounds', '').lower())
+                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'lower'
+
+     Year   Appeals
+   ------------------
+     2013        74
+     2014        77
+     2015        92
+     2016       106
+     2017        98
+     2018        87
+     2019       120
+     2020        94
+     2021       112
+     2022       111
+     2023        96
+     2024        89
+     2025        94
+
+   Trend: 89.0/year (2013-2018) → 102.3/year (2019-2025)
+   Change: +14.9%
+
+5. CMX-1 (Commercial/Commercial Mixed-Use)
+   Total: 778 appeals (59.8/year)
+
+     Year   Appeals
+   ------------------
+     2013        53
+     2014        71
+     2015        73
+     2016        70
+     2017        56
+     2018        64
+     2019        68
+     2020        35
+     2021        55
+     2022        65
+     2023        57
+     2024        57
+     2025        54
+
+   Trend: 64.5/year (2013-2018) → 55.9/year (2019-2025)
+   Change: -13.4%
+
+====================================================================================================
+Phase 2: Analyzing variance types for top districts
+====================================================================================================
+
+Sampling recent appeals to identify variance patterns...
+
+1. Analyzing RSA-5...
+   Sample: 1751 appeals (2022-2025)
+   Variance types:
+     Roof decks: 406 (23.2%)
+     Parking: 230 (13.1%)
+     Height: 49 (2.8%)
+     Commercial: 115 (6.6%)
+     Dwelling units: 109 (6.2%)
+
+2. Analyzing RM-1...
+  Attempt 1 failed: HTTPSConnectionPool(host='phl.carto.com', port=443): Read ti...
+  Attempt 2 failed: HTTPSConnectionPool(host='phl.carto.com', port=443): Read ti...
+  Attempt 3 failed: HTTPSConnectionPool(host='phl.carto.com', port=443): Read ti...
+   ✗ Failed to get sample
+3. Analyzing CMX-2...
+   Sample: 440 appeals (2022-2025)
+   Variance types:
+     Roof decks: 82 (18.6%)
+     Parking: 64 (14.5%)
+     Height: 13 (3.0%)
+     Commercial: 128 (29.1%)
+     Dwelling units: 41 (9.3%)
+
+4. Analyzing RSA-3...
+   Sample: 390 appeals (2022-2025)
+   Variance types:
+     Roof decks: 46 (11.8%)
+     Parking: 98 (25.1%)
+     Height: 10 (2.6%)
+     Commercial: 22 (5.6%)
+     Dwelling units: 33 (8.5%)
+
+5. Analyzing CMX-1...
+   Sample: 233 appeals (2022-2025)
+   Variance types:
+     Roof decks: 31 (13.3%)
+     Parking: 19 (8.2%)
+     Height: 6 (2.6%)
+     Commercial: 69 (29.6%)
+     Dwelling units: 11 (4.7%)
+
+====================================================================================================
+KEY FINDINGS
+====================================================================================================
+
+1. Top 5 districts account for 12,751 appeals (76.2% of total)
+
+2. RSA-5 alone accounts for 6,892 appeals (41.2% of total)
+
+3. Residential zones account for 11,262 appeals (67.3% of total)
+
+ANALYSIS COMPLETE

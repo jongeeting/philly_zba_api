@@ -1,0 +1,10 @@
+====================================================================================================
+COMPLETE ZONING DISTRICT ANALYSIS (2013-2025)
+====================================================================================================
+
+Fetching appeals by zoning district for 2013-2025...
+(This will take several minutes as we process 13 years of data)
+
+Processing 2013... ✓ 1197 records
+Processing 2014...   Attempt 1/3 failed: HTTPSConnectionPool(host='phl.carto.com', port=443): Read timed out. (read timeo...
+  Attempt 2/3 failed: HTTPSConnectionPool(host='phl.carto.com', port=443): Read timed out. (read timeo...
