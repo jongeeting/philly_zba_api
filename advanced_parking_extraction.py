@@ -83,19 +83,27 @@ def extract_units_advanced(text):
 def extract_parking_advanced(text):
     """Extract parking space count with comprehensive patterns"""
     text_upper = text.upper()
-    
-    # Strategy 1: Direct digit patterns
+
+    # Strategy 1: Direct digit patterns (expanded with new patterns)
     digit_patterns = [
         r'(\d+)\s*(?:ACCESSORY\s+)?(?:OFF[-\s]?STREET\s+)?(?:VEHICLE\s+|VEHICULAR\s+)?PARKING\s*SPACES?',
-        r'(\d+)\s*(?:INTERIOR|EXTERIOR|SURFACE|STRUCTURED)\s+(?:ACCESSORY\s+)?PARKING\s*SPACES?',
+        r'(\d+)\s*(?:INTERIOR|EXTERIOR|SURFACE|STRUCTURED)\s+(?:ACCESSORY\s+)?PARKING\s*(?:SPACES?|GARAGES?)',
         r'PARKING\s+(?:FOR\s+)?(\d+)\s+(?:VEHICLES?|SPACES?)',
-        r'WITH\s+(\d+)\s+ACCESSORY\s+(?:OFF[-\s]?STREET\s+)?PARKING',
+        r'WITH\s+(\d+)\s+ACCESSORY\s+(?:OFF[-\s]?STREET\s+)?(?:STRUCTURED\s+)?PARKING(?:\s+SPACE)?',
         r'TOTAL\s+(?:OF\s+)?(\d+)\s+(?:ACCESSORY\s+)?PARKING\s*SPACES?',
         r'\(TOTAL\s+(\d+)\s+PARKING\s+SPACES',
         r'(\d+)\s+PARKING\s+SPACES?\s+\(',
         r'PROVIDE(?:S)?\s+(\d+)\s+(?:ACCESSORY\s+)?PARKING',
+        # New patterns for additional coverage
+        r'(\d+)\s+VEHICLE\s+PARKING\s*SPACES?',  # "X VEHICLE PARKING SPACES"
+        r'(\d+)\s+INTERIOR\s+PARKING\s+GARAGES?',  # "X INTERIOR PARKING GARAGES"
+        r'(\d+)\s+TOTAL\s+INTERIOR\b',  # "X total interior"
+        r'SPACE\s+FOR\s+(\d+)\s+VEHICULAR\s+PARKING',  # "space for X vehicular parking"
+        r'TO\s+PROVIDE.*?(\d+)\s+(?:VEHICULAR\s+)?PARKING\s*SPACES?',  # "to provide...X parking spaces"
+        r'WITH\s+(\d+)\s+(?:INTERIOR|EXTERIOR)\s+PARKING',  # "with X interior/exterior parking"
+        r'(\d+)\s+ACCESSORY\s+PARKING\s*(?:SPACES?)?\s+\(',  # "X accessory parking ("
     ]
-    
+
     parking_counts = []
     for pattern in digit_patterns:
         matches = re.findall(pattern, text_upper)
@@ -104,28 +112,42 @@ def extract_parking_advanced(text):
                 count = int(m) if isinstance(m, str) else int(m[0])
                 if 0 <= count <= 500:
                     parking_counts.append(count)
-    
-    # Strategy 2: Written numbers with digit in parentheses
+
+    # Strategy 2: Written numbers with digit in parentheses (expanded)
     for word, num in NUMBER_WORDS.items():
-        pattern = rf'{re.escape(word)}\s*\((\d+)\)\s+(?:ACCESSORY\s+)?(?:VEHICLE\s+|VEHICULAR\s+)?PARKING\s*SPACES?'
-        match = re.search(pattern, text_upper)
-        if match:
-            count = int(match.group(1))
-            if 0 <= count <= 500:
-                parking_counts.append(count)
-    
-    # Strategy 3: Written numbers alone for parking
+        patterns = [
+            rf'{re.escape(word)}\s*\((\d+)\)\s+(?:ACCESSORY\s+)?(?:VEHICLE\s+|VEHICULAR\s+)?PARKING\s*SPACES?',
+            rf'{re.escape(word)}\s*\((\d+)\)\s+(?:INTERIOR|EXTERIOR)\s+PARKING',
+            rf'{re.escape(word)}\s*\((\d+)\)\s+VEHICLE\s+PARKING\s+SPACES?',
+        ]
+        for pattern in patterns:
+            match = re.search(pattern, text_upper)
+            if match:
+                count = int(match.group(1))
+                if 0 <= count <= 500:
+                    parking_counts.append(count)
+
+    # Strategy 3: Written numbers alone for parking (expanded)
     for word, num in sorted(NUMBER_WORDS.items(), key=lambda x: -len(x[0])):
-        pattern = rf'{re.escape(word)}\s+(?:ACCESSORY\s+)?(?:VEHICLE\s+|VEHICULAR\s+)?PARKING\s*SPACES?\b'
-        if re.search(pattern, text_upper):
-            if 0 <= num <= 500:
-                parking_counts.append(num)
-    
+        patterns = [
+            rf'{re.escape(word)}\s+(?:ACCESSORY\s+)?(?:VEHICLE\s+|VEHICULAR\s+)?PARKING\s*SPACES?\b',
+            rf'WITH\s+{re.escape(word)}\s+ACCESSORY\s+PARKING(?:\s+SPACE)?',
+            rf'{re.escape(word)}\s+ACCESSORY\s+OFF[-\s]STREET\s+PARKING\s+SPACE',
+            rf'{re.escape(word)}\s+(?:INTERIOR|EXTERIOR)\s+PARKING\b',
+        ]
+        for pattern in patterns:
+            if re.search(pattern, text_upper):
+                if 0 <= num <= 500:
+                    parking_counts.append(num)
+
     # Return the most commonly mentioned number, or the largest if tied
     if parking_counts:
-        # Most parking descriptions mention the count once; if multiple, take max
-        return max(parking_counts)
-    
+        # Use Counter to find most common, break ties with max
+        from collections import Counter
+        count_freq = Counter(parking_counts)
+        most_common = count_freq.most_common(1)[0][0]
+        return most_common
+
     return None
 
 # Extract data from appealgrounds
