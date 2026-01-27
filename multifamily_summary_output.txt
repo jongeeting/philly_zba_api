@@ -1,0 +1,141 @@
+====================================================================================================
+MULTIFAMILY HOUSING BARRIERS - SUMMARY FROM EXISTING ANALYSIS
+====================================================================================================
+
+OVERVIEW
+----------------------------------------------------------------------------------------------------
+
+Total variance appeals (2013-2025): 16,954
+Appeals explicitly mentioning dwelling units: 921 (5.4%)
+Per year: 70.8
+
+====================================================================================================
+DWELLING UNIT THRESHOLDS (from detailed analysis)
+====================================================================================================
+
+ Units  Appeals   Cumulative   % Resolved
+---------------------------------------------
+     1        6            6         1.2%
+     2       22           28         5.8%
+     3      247          275        56.8%
+     4      108          383        79.1%
+     5       43          426        88.0%
+     6       58          484       100.0%
+
+KEY THRESHOLDS:
+
+  Allow duplexes (≤2 units):    28 appeals (5.8%)
+  Allow triplexes (≤3 units):   275 appeals (56.8%)
+  Allow fourplexes (≤4 units):  383 appeals (79.1%)
+  Allow sixplexes (≤6 units):   484 appeals (100.0%)
+
+====================================================================================================
+TOP VARIANCE GENERATORS AFFECTING MULTIFAMILY
+====================================================================================================
+
+Variance Type               Total Appeals   % of All   Per Year
+----------------------------------------------------------------------
+Roof decks                          4,137      24.4%      318.2
+Parking                             3,521      20.8%      270.8
+Commercial                          3,737      22.1%      287.5
+Height                              1,259       7.4%       96.8
+Dwelling units                        921       5.4%       70.8
+
+**Note:** These affect ALL development, but are particularly problematic for
+multifamily housing which often needs:
+  - Roof decks for amenity space
+  - Reduced parking (transit-oriented development)
+  - 4+ stories for viability
+  - More than single-family density
+
+====================================================================================================
+MULTIFAMILY IN TOP ZONING DISTRICTS
+====================================================================================================
+
+District   Type                                        Appeals Notes                         
+----------------------------------------------------------------------------------------------------
+RSA-5      Residential Single-Family Attached            6,892 Technically single-family, but conversions common
+RM-1       Residential Multi-family                      2,074 EXPLICIT multifamily zone     
+CMX-2      Commercial Mixed-Use                          1,757 Allows multifamily mixed-use  
+RSA-3      Residential Single-Family Attached            1,250 Technically single-family, but conversions common
+
+**Key insight:** RM-1 is the PRIMARY multifamily zone and has 2,074 appeals (12.4% of total)
+This shows that even zones DESIGNED for multifamily require variances frequently
+
+====================================================================================================
+RM-1 (MULTIFAMILY ZONE) DETAILED ANALYSIS
+====================================================================================================
+
+RM-1 total appeals (2013-2025): 2,074
+Average per year: 159.5
+
+**Trend noted:** RM-1 had a sharp drop after 2017 (119/year → 71/year)
+This may indicate:
+  - A zoning change that made some projects by-right
+  - Data quality issues
+  - Reduced multifamily development pressure
+
+====================================================================================================
+REFORM IMPACT ON MULTIFAMILY HOUSING
+====================================================================================================
+
+SCENARIO 1: Allow Fourplexes by-right (≤4 units)
+  Unit-related appeals eliminated: 383
+  Per year: 29.5
+  % of unit-specific appeals: 79.1%
+
+SCENARIO 2: Fourplex + No Parking + 4 Stories + Roof Decks
+  This is our 'Tier 2' reform package
+  Total appeals eliminated: ~661/year
+  This includes:
+    - 29.5/year from allowing fourplexes
+    - ~271/year from eliminating parking minimums
+    - ~97/year from allowing 4 stories
+    - ~318/year from allowing roof decks
+  (Note: Some overlap between categories)
+
+SCENARIO 3: Focus on RM-1 (Multifamily Zone)
+  Current: 159.5 appeals/year in RM-1
+  If we fixed RM-1 rules (parking, height, roof decks):
+    Estimated 40-50% reduction → ~40-50 appeals/year eliminated
+
+====================================================================================================
+SUMMARY: MULTIFAMILY HOUSING BARRIERS
+====================================================================================================
+
+THE PROBLEM:
+
+  1. Even multifamily zones (RM-1) require 160 variances/year
+  2. Single-family zones (RSA-5) block conversions (530 appeals/year)
+  3. Dwelling unit limits force 71 variances/year for density
+  4. Parking minimums add 271 variances/year (many for multifamily)
+  5. Height limits add 97 variances/year (many for 4+ story multifamily)
+
+THE SOLUTION:
+
+  1. Allow fourplexes by-right → eliminates 29 unit-related appeals/year
+  2. Eliminate parking minimums → eliminates 271 appeals/year
+  3. Allow 4 stories → eliminates 97 appeals/year
+  4. Allow roof decks → eliminates 318 appeals/year
+
+  COMBINED: ~598 appeals/year eliminated (46% of total)
+
+WHY THIS MATTERS FOR MULTIFAMILY:
+
+  • Small multifamily (2-4 units) is 'naturally affordable' housing
+  • Doesn't require subsidies or government programs
+  • Matches Philadelphia's historic building patterns (rowhouse conversions)
+  • Current rules force most small multifamily through variance process
+  • Costs $5,000-15,000 and 3-6 months per variance
+  • Makes small-scale development economically marginal
+
+THE ASK:
+
+  1. Allow fourplexes by-right in RSA and RM zones
+  2. Eliminate parking minimums (let market decide)
+  3. Allow 4 stories in residential zones
+  4. Allow roof decks by-right (common amenity)
+
+  Result: 46% fewer variance appeals, faster multifamily production
+
+====================================================================================================
