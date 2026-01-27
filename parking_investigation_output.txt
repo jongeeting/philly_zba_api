@@ -1,0 +1,324 @@
+====================================================================================================
+PARKING VARIANCES IN NO-MINIMUM DISTRICTS
+====================================================================================================
+
+Investigating: RSA-5, RM-1, CMX-2, CMX-2.5
+These districts have NO parking minimums, yet show parking variance appeals
+
+====================================================================================================
+DISTRICT: RSA-5
+====================================================================================================
+
+Fetching recent parking appeals in RSA-5...
+✓ Found 10 sample parking appeals
+
+1. 912-14 S FRONT ST (2025-08-07)
+   Appeal text: PERMIT For the relocation of lot lines to create one lot (Parcel A) from three lots (Deeded 912 S Front ST, 914 S Front St, & 912-14 S Front St Rear). 
+
+For the complete demolition of the existing structure. For the erection of three semi-detached structures, each to include structured parking accessed by a shared driveway (six spaces total), and a roof deck with a pilot house. Size and location
+   → Appears to be: PARKING LOCATION requirement
+   → Appears to be: PARKING SPACE DIMENSIONS
+   → Appears to be: PARKING ACCESS/DRIVEWAY requirement
+
+2. 1515 E PASSYUNK AVE (2025-07-24)
+   Appeal text: Permit for one (1) vacant commercial space with use as allowed in cmx-2.5 zoning district (separate use registration permit required) with existing one (1)  residential dwelling unit above, and one interior accessory parking space as previously approved.
+   → Appears to be: PARKING ACCESS/DRIVEWAY requirement
+
+3. 2324 TASKER ST (2025-10-15)
+   Appeal text: PERMIT FOR THE ERECTION OF AN ATTACHED STRUCTURE WITH CELLAR AND FIRST FLOOR OVERHANG ROOF ON FRONT SETBACK, AND EIGHT FEET FRONT SETBACK ABOVE 2ND FLOOR; AND ACCESSORY ROOF DECK FOR RESIDENTIAL USE ONLY WITH ROOF ACCESS STRUCTURE. SIZE AND LOCATION AS SHOWN IN THE APPLICATION / PLAN. 
+USE: FOR HOUSEHOLD LIVING SINGLE FAMILY DWELLING WITH ONE (1) ACCESSORY INTERIOR PARKING SPACE.
+
+
+   → Appears to be: PARKING LOCATION requirement
+   → Appears to be: PARKING SPACE DIMENSIONS
+   → Appears to be: PARKING ACCESS/DRIVEWAY requirement
+
+4. 434 DICKINSON ST (2025-10-02)
+   Appeal text: PERMIT FOR A NEW SURFACE PARKING SPACE AT THE EXISTING FRONT YARD OF THE EXISTING ATTACHED SINGLE FAMILY HOUSE.
+   → Appears to be: PARKING SURFACE MATERIAL requirement
+
+5. 1012 CARPENTER ST (2025-07-10)
+   Appeal text: PERMIT FOR THE CREATION OF ONE (1) SURFACE PARKING SPACE ACCESSORY TO EXISTING SINGLE FAMILY DWELLING IN AN ATTACHED STRUCTURE. SIZE AND LOCATION AS SHOWN IN PLAN. 
+   → Appears to be: PARKING LOCATION requirement
+   → Appears to be: PARKING SPACE DIMENSIONS
+   → Appears to be: PARKING ACCESS/DRIVEWAY requirement
+   → Appears to be: PARKING SURFACE MATERIAL requirement
+
+6. 1537 N FRANKLIN ST (2025-12-11)
+   Appeal text: PERMIT FOR THE ERECTION OF AN ATTACHED STRUCTURE, REAR BALCONY (ACCESSED FROM THE SECOND FLOOR), ROOF DECK AND ROOF DECK ACCESS STRUCTURE. FOR SINGLE FAMILY HOUSEHOLD LIVING WITH ONE (1) ACCESSORY OFF-STREET (STRUCTURED/GARAGE) PARKING SPACE ACCESSED FROM THE FRONT. SIZE & LOCATION AS SHOWN ON THE APPLICATION/PLANS.
+   → Appears to be: PARKING LOCATION requirement
+   → Appears to be: PARKING SPACE DIMENSIONS
+   → Appears to be: PARKING ACCESS/DRIVEWAY requirement
+
+7. 1543 N FRANKLIN ST (2025-12-11)
+   Appeal text: PERMIT FOR THE ERECTION OF AN ATTACHED STRUCTURE WITH A ROOF DECK AND ROOF DECK ACCESS STRUCTURE ABOVE, BALCONIES AT THE FRONT AND REAR, AND ONE (1) OFF-STREET GARAGE PARKING SPACE. SIZE AND LOCATION AS SHOWN IN THE APPLICATION / PLANS.
+   → Appears to be: PARKING LOCATION requirement
+   → Appears to be: PARKING SPACE DIMENSIONS
+   → Appears to be: PARKING ACCESS/DRIVEWAY requirement
+
+8. 1547 N FRANKLIN ST (2025-12-11)
+   Appeal text: PERMIT FOR THE ERECTION OF AN ATTACHED STRUCTURE WITH A ROOF DECK AND ROOF DECK ACCESS STRUCTURE ABOVE, BALCONIES AT THE FRONT AND REAR, AND ONE (1) OFF-STREET GARAGE PARKING SPACE. SIZE AND LOCATION AS SHOWN IN THE APPLICATION / PLANS.
+   → Appears to be: PARKING LOCATION requirement
+   → Appears to be: PARKING SPACE DIMENSIONS
+   → Appears to be: PARKING ACCESS/DRIVEWAY requirement
+
+9. 2715 W WESTMORELAND ST (2025-10-24)
+   Appeal text: PERMIT For the elimination of the interior parking garage, to be converted into habitable space.
+
+For the proposed use, Two-Family Household Living, within the existing structure.
+
+10. 271 DELMAR ST (2025-04-08)
+   Appeal text: PERMIT FOR THE LOT LINE RELOCATION OF NINE (9) EXISITNG LOTS (PROPOSED PARCEL A, B, C, D, E, F, G, H, AND I). FOR USE AS SINGLE-FAMILY DWELLINGS ON LOTS A, B, C, D, E, F, G, AND H AS PREVIOUSLY APPROVED. FOR THE CREATION OF THREE (3) EASEMENT AGREEMENTS AND A NON-ACCESSORY SURFACE PARKING LOT CONTAINING 16 PARKING SPACES (ONE (1) VAN ACCESSIBLE SPACE). SIZE AND LOCATION AS SHOWN IN THE APPLICATION
+   → Appears to be: PARKING LOCATION requirement
+   → Appears to be: PARKING SPACE DIMENSIONS
+   → Appears to be: PARKING ACCESS/DRIVEWAY requirement
+   → Appears to be: PARKING SURFACE MATERIAL requirement
+
+====================================================================================================
+DISTRICT: RM-1
+====================================================================================================
+
+Fetching recent parking appeals in RM-1...
+✓ Found 10 sample parking appeals
+
+1. 2401 N 10TH ST (2025-07-18)
+   Appeal text: Permit for the erection of two (2) separate structures on the same lot. sizes and locations as shown on the plan. For use as multi-family household living for a
+total of 10 dwelling units. Work also to provide surface parking space for five (5) vehicular parking spaces (including one (1) ADA accessible space).
+   → Appears to be: PROVIDING parking (unclear if more or less)
+   → Appears to be: PARKING LOCATION requirement
+   → Appears to be: PARKING SPACE DIMENSIONS
+   → Appears to be: PARKING ACCESS/DRIVEWAY requirement
+   → Appears to be: PARKING SURFACE MATERIAL requirement
+
+2. 1429-35 PARRISH ST (2025-08-19)
+   Appeal text: PERMIT FOR CREATE OF FORTY-FIVE (45) NON-ACCESSORY INTERIOR PARKING SPACES (INCLUDING TWO (2) ACCESSIBLE SPACES, ONE (1) OF WHICH IS VAN ACCESSIBLE AND FIVE (5) BICYCLE PARKING SPACE ON AN ACCESSIBLE ROUTE AND FOR CHANGE OF USE TO NON-ACCESSORY STRUCTURED PARKING. SIZE AND LOCATION AS SHOWN ON THE APPLICATION AND PLAN.
+   → Appears to be: PARKING LOCATION requirement
+   → Appears to be: PARKING SPACE DIMENSIONS
+   → Appears to be: PARKING ACCESS/DRIVEWAY requirement
+
+3. 502-04 S JUNIPER ST (2025-05-31)
+   Appeal text: PERMIT FOR THE RELOCATION OF LOT LINE TO ADJUST TWO (2) EXISTING ZONING/DEEDED LOTS, (1330 LOMBARD ST & 502-04 S JUNIPER ST) INTO TWO (2) LOTS (PARCEL ‘A’: 1330 LOMBARD ST) & (PARCEL ‘B’: 502-04 S JUNIPER ST); SIZE AND LOCATION AS SHOWN ON THE PLAN.
+
+ON PARCEL “A”, FOR AN EXISTING THREE (3) STORY STRUCTURE TO REMAIN; FOR USE AS A BUSINESS AND PROFESSIONAL OFFICE ON THE FIRST FLOOR AND TWO (2) FA
+   → Appears to be: PARKING LOCATION requirement
+   → Appears to be: PARKING SPACE DIMENSIONS
+   → Appears to be: PARKING ACCESS/DRIVEWAY requirement
+
+4. 2028 LOCUST ST (2025-07-07)
+   Appeal text: Permit for partial demolition to remove rear single-story portion (on Latimer Street) and replace with deck accessed from the rear second floor, and to remove side window bay at second story, of an existing attached structure, size and location as shown on plan/application. For use as Single-Family Household Living, and with one (1) accessory surface parking space accessed via Latimer Street.
+   → Appears to be: PARKING LOCATION requirement
+   → Appears to be: PARKING SPACE DIMENSIONS
+   → Appears to be: PARKING ACCESS/DRIVEWAY requirement
+   → Appears to be: PARKING SURFACE MATERIAL requirement
+
+5. 510-28 S 8TH ST (2025-05-23)
+   Appeal text: Permit for the erection of an addition above an existing attached structure to include roof deck and a pilot house. Size and location per plans.
+
+For the proposed uses of Religious Assembly, Educational Facility, Community Center, and Multi-Family Household Living (3 units), with accessory structured parking for twelve interior accessory parking spaces at 1st floor, including 1 van-accessible AD
+   → Appears to be: PARKING LOCATION requirement
+   → Appears to be: PARKING SPACE DIMENSIONS
+   → Appears to be: PARKING ACCESS/DRIVEWAY requirement
+
+6. 6236 N BROAD ST (2025-08-28)
+   Appeal text: PERMIT FOR THE ERECTION OF AN ATTACHED STRUCTURE WITH A ROOF DECK AND ROOF DECK ACCESS STRUCTURES ABOVE. FOR USE AS MULTI-FAMILY HOUSEHOLD LIVING CONTAINING 31 DWELLING UNITS, VACANT SPACES ON THE FIRST FLOOR LEVEL, 18 VEHICLE PARKING SPACES (ONE (1) VAN ACCESSIBLE SPACE), AND 11 CLASS 1A BICYCLE PARKING SPACES. SIZE AND LOCATION AS SHOWN IN THE APPLICATION / PLANS.
+   → Appears to be: PARKING LOCATION requirement
+   → Appears to be: PARKING SPACE DIMENSIONS
+   → Appears to be: PARKING ACCESS/DRIVEWAY requirement
+
+7. 917 E PASSYUNK AVE (2025-05-12)
+   Appeal text: Application is for the erection of a masonry fence wall and for one (1) off-street surface parking space (non-accessory parking). Sizes and locations as shown on plans.
+
+Two (2) Zoning Refusals
+Two (2) Use Refusals
+   → Appears to be: PARKING LOCATION requirement
+   → Appears to be: PARKING SPACE DIMENSIONS
+   → Appears to be: PARKING ACCESS/DRIVEWAY requirement
+   → Appears to be: PARKING SURFACE MATERIAL requirement
+
+8. 810 S 10TH ST (2025-09-24)
+   Appeal text: Permit FOR THE ERECTION OF A FENCE IN THE REAR YARD OF AN EXISTING ATTACHED STRUCTURE. FOR NO CHANGE OF USE FROM SINGLE FAMILY HOUSEHOLD LIVING. FOR NOT CHANGE TO ONE (1) OPEN ACCESSORY OFF STREET PARKING AS PREVIOUSLY APPROVED. SIZE/LOCATION AS SHOWN ON THE PLANS.
+   → Appears to be: PARKING LOCATION requirement
+   → Appears to be: PARKING SPACE DIMENSIONS
+   → Appears to be: PARKING ACCESS/DRIVEWAY requirement
+
+9. 757 S 5TH ST (2025-07-10)
+   Appeal text: Permit for the erection of an addition with roof deck, roof deck access structure, and exterior stair above an existing attached structure. For reconstruction of rear lower roof deck. Size and location as shown on plans. No change to single-family household living use with one (1) off-street structured accessory parking space.
+
+One (1) Use Refusal
+One (1) Zoning Refusal
+   → Appears to be: PARKING LOCATION requirement
+   → Appears to be: PARKING SPACE DIMENSIONS
+   → Appears to be: PARKING ACCESS/DRIVEWAY requirement
+
+10. 811 S 19TH ST (2025-06-02)
+   Appeal text: Permit for new construction of a three story single-family dwelling with pilot house, roof deck with pergola, and 2 car parking in the main structure access in front of property.
+   → Appears to be: PARKING ACCESS/DRIVEWAY requirement
+
+====================================================================================================
+DISTRICT: CMX-2
+====================================================================================================
+
+Fetching recent parking appeals in CMX-2...
+✓ Found 10 sample parking appeals
+
+1. 2341 N 10TH ST (2025-07-12)
+   Appeal text: PERMITFOR THE ERECTION OF ONE (1) ATTACHED BUILDING (BUILDING 29/30), ONE (1) SEMI-DETACHED BUILDING (BUILDING 26/27/28) AND ONE (1) DETACHED BUILDING (BUILDING 22/23/24/25). SIZE AND LOCATION AS SHOWN IN APPLICATION/PLANS. 
+
+FOR USE AS MULTI-FAMILY HOUSEHOLD LIVING [ELEVEN (11) TOTAL DWELLING UNITS - TWO (2) DWELLING UNITS IN BUILDING 29/30, THREE (3) DWELLING UNITS IN BUILDING 26/27/28 & SIX (
+   → Appears to be: PARKING LOCATION requirement
+   → Appears to be: PARKING SPACE DIMENSIONS
+   → Appears to be: PARKING ACCESS/DRIVEWAY requirement
+   → Appears to be: PARKING SURFACE MATERIAL requirement
+
+2. 2332 N 10TH ST (2025-07-11)
+   Appeal text: PERMIT FOR THE ERECTION OF AN ATTACHED STRUCTURE AND ELEVEN (11) VEHICLE PARKING SPACE (ONE (1) VAN ACCESSIBLE SPACE AND TWO (2) COMPACT SPACES). FOR USE AS A MULTI-FAMILY HOUSEHOLD LIVING USE CONTAINING EIGHT (8) DWELLING UNITS. SIZE AND LOCATION AS SHOWN IN THE APPLICATION / PLANS.
+   → Appears to be: PARKING LOCATION requirement
+   → Appears to be: PARKING SPACE DIMENSIONS
+   → Appears to be: PARKING ACCESS/DRIVEWAY requirement
+
+3. 2310 PEROT ST (2025-08-04)
+   Appeal text: Permit for the erection of an attach structure (new construction) for use as a single-family household living with one pilot house with roof deck on main building and a garage for one off street parking with roof deck above. 
+
+4. 1932 CECIL B MOORE AVE (2025-06-18)
+   Appeal text: Permit for uses, Business & professional and Multi-Family (Seven (7) Dwelling units) Household Living, in an existing attached structure. 
+Must contain a use other than residential and other than parking along 100% of the ground floor frontage and within the first 30 ft. of building depth, measured from the front building line.
+No sign on this permit
+
+
+5. 801 S 9TH ST (2025-08-11)
+   Appeal text: PERMIT FOR THE COMPLETE DEMOLITION OF ALL EXISTING STRUCTURES ON LOT; FOR THE ERECTION OF AN ATTACHED FOUR (4) STORY STRUCTURE WITH A ROOF DECK (RESIDENTIAL USE ONLY) ACCESSED BY TWO (2) ROOF DECK ACCESS STRUCTURES, INCLUDING AN ELEVATOR AREA; FOR USE AS MULTI-FAMILY (TOTAL SIXTEEN (16) DWELLING UNITS) HOUSEHOLD LIVING; WITH FIFTEEN (15) ACCESSORY OFF-STREET PARKING SPACES; INCLUDING ONE (1) ADA V
+   → Appears to be: PARKING LOCATION requirement
+   → Appears to be: PARKING SPACE DIMENSIONS
+   → Appears to be: PARKING ACCESS/DRIVEWAY requirement
+
+6. 800 S DARIEN ST (2025-08-11)
+   Appeal text: PERMIT FOR THE COMPLETE DEMOLITION OF ALL EXISTING STRUCTURES ON LOT; FOR THE ERECTION OF AN ATTACHED FOUR (4) STORY STRUCTURE; FOR USE AS MULTI-FAMILY (TOTAL NINE (9) DWELLING UNITS) HOUSEHOLD LIVING; EACH UNIT IS TO HAVE A DECK ACCESSED FROM THE SECOND-FLOOR REAR, A ROOF DECK TO BE ACCESSED BY A PILOT HOUSE, AND TWO ACCESSORY PARKING SPACES (FOR A TOTAL OF EIGHTEEN (18) ACCESSORY PARKING SPACES)
+   → Appears to be: PARKING LOCATION requirement
+   → Appears to be: PARKING SPACE DIMENSIONS
+   → Appears to be: PARKING ACCESS/DRIVEWAY requirement
+
+7. 526 E GIRARD AVE (2025-09-10)
+   Appeal text: PERMIT For the addition of a parking space at the rear of an existing structure. size and location as shown on the plan. Parking space to be accessory to a single-family household living.
+   → Appears to be: PARKING LOCATION requirement
+   → Appears to be: PARKING SPACE DIMENSIONS
+   → Appears to be: PARKING ACCESS/DRIVEWAY requirement
+
+8. 323 W GIRARD AVE (2025-06-09)
+   Appeal text: PERMIT FOR THE RELOCATION OF LOT LINE TO CONSOLIDATE TWO (2) ZONING LOTS (PREMISES ‘A’: 323 W GIRARD AVE.), (PREMISES ‘B’: 325 W GIRARD AVE.) INTO A SINGLE LOT (PARCEL A); SIZE AND LOCATION AS SHOWN ON THE PLAN.
+
+FOR THE ERECTION OF A FOUR-STORY ATTACHED STRUCTURE WITH ROOF DECK (RESIDENTIAL USE ONLY) ACCESSED FROM A ROOF DECK ACCESS STRUCTURE, FOR USE AS A VACANT COMMERCIAL SPACE (USE REGISTRAT
+   → Appears to be: PARKING LOCATION requirement
+   → Appears to be: PARKING SPACE DIMENSIONS
+   → Appears to be: PARKING ACCESS/DRIVEWAY requirement
+
+9. 1412 W LEHIGH AVE (2025-07-22)
+   Appeal text: SPECIAL EXEMPTION FOR THE ESTABLISHMENT OF A UNITY OF USE TO CREATE ONE (1) LOT (1412-22 W LEHIGH AVE) FOR ZONING PURPOSES WITH COVENANTS, EASEMENTS AND AGREEMENTS TO BE RECORDED TO BIND CURRENT AND FUTURE OWNERS OF THE CONTIGUOUS TWO (2) PARCELS (1412-22 W LEHIGH AVE AND 1424-40 W LEHIGH AVE) TO PRESERVE THE UNITY OF USE AND THE LEGALITY OF THE ENTIRE PROJECT THAT STEMS FROM THE SINGLE ZONING LOT
+   → Appears to be: PARKING LOCATION requirement
+   → Appears to be: PARKING SPACE DIMENSIONS
+   → Appears to be: PARKING ACCESS/DRIVEWAY requirement
+   → Appears to be: PARKING SURFACE MATERIAL requirement
+
+10. 2015 FRANKFORD AVE (2025-10-30)
+   Appeal text: PERMIT FOR THE RELOCATION OF LOT LINE TO CONSOLIDATE SEVEN (7) LOTS (PREMISES ‘A’: 2015 FRANKFORD AVE.), (PREMISES ‘B’: 2017 FRANKFORD AVE.) (PREMISES ‘C’: 2019 FRANKFORD AVE.), (PREMISES ‘D’: 2016 SEPVIVA ST.), (PREMISES ‘E’: 2018 SEPVIVA ST.), (PREMISES ‘F’: 2021 FRANKFORD AVE.), (PREMISES ‘G’: 2020 SEPVIVA ST.),  INTO TWO (2) LOTS (PARCEL “I” & PARCEL “H”); SIZE AND LOCATION AS SHOWN ON THE PLA
+   → Appears to be: PARKING LOCATION requirement
+   → Appears to be: PARKING SPACE DIMENSIONS
+   → Appears to be: PARKING ACCESS/DRIVEWAY requirement
+
+====================================================================================================
+DISTRICT: CMX-2.5
+====================================================================================================
+
+Fetching recent parking appeals in CMX-2.5...
+✓ Found 10 sample parking appeals
+
+1. 1501 FAIRMOUNT AVE (2025-08-04)
+   Appeal text: Permit for the erection of an attached structure to include a pilot house (for roof maintenance only) and 22 class 1A bicycle parking spaces. Size and location per plans.
+
+For the proposed uses of Multi-Family Household Living (32 dwelling units) with vacant commercial space on the first floor.
+   → Appears to be: PARKING LOCATION requirement
+   → Appears to be: PARKING SPACE DIMENSIONS
+
+2. 6122 LANCASTER AVE (2025-10-09)
+   Appeal text: SPECIAL EXCEPTION FOR THE ERECTION OF TWO (2) ADDITIONS ATTACHED TO AN EXISTING ONE (1)-STORY STRUCTURE; FOR USE AS A COMMUNITY CENTER, LIBRARIES AND CULTURAL EXHIBITS, PASSIVE RECREATION, FARMER’S MARKET, AND COMMUNITY GARDEN, WITH ALL OTHER USES ON THE SAME LOT AS PREVIOUSLY APPROVED; AND FOR THE CREATION OF FOUR (4) ACCESSORY OFF-STREET SURFACE PARKING SPACES, INCLUDING ONE (1) VAN ACCESSIBLE A
+   → Appears to be: PARKING LOCATION requirement
+   → Appears to be: PARKING SPACE DIMENSIONS
+   → Appears to be: PARKING ACCESS/DRIVEWAY requirement
+   → Appears to be: PARKING SURFACE MATERIAL requirement
+
+3. 8030 FRANKFORD AVE (2025-02-03)
+   Appeal text: Permit for a vender stand (a road-ready food vending trailer) in the previously approved accessory parking lot of the property, size and location as shown on the plans.
+For use as a take-out restaurant.
+   → Appears to be: PARKING LOCATION requirement
+   → Appears to be: PARKING SPACE DIMENSIONS
+   → Appears to be: PARKING ACCESS/DRIVEWAY requirement
+
+4. 1224 FRANKFORD AVE (2025-03-08)
+   Appeal text: PERMIT FOR THE ERECTION OF AN ATTACHED FIVE (5) STORY STRUCTURE WITH A ROOF DECK ACCESSED BY THREE (3) ROOF DECK ACCESS STRUCTURES, INCLUDING ONE (1) ROOF DECK ACCESS STRUCTURE WITH AN ELEVATOR OVERURN; FOR USE AS TWO (2) VACANT COMMERCIAL SPACES (USE REGISTRATION REQUIRED PRIOR TO OCCUPANCY) ON THE GROUND FLOOR AND VISITOR ACCOMMODATION (TOTAL FIFTY-NINE (59) UNITS, INCLUDING  SIX (6) GREEN ROOF 
+   → Appears to be: PARKING LOCATION requirement
+   → Appears to be: PARKING SPACE DIMENSIONS
+   → Appears to be: PARKING ACCESS/DRIVEWAY requirement
+
+5. 1015-17 N AMERICAN ST (2022-04-26)
+   Appeal text: PERMIT FOR THE ERECTION OF ONE-STORY ADDITION (4TH FLOOR) ABOVE THE EXISTING THIRD FLOOR AND ADDITION OF REAR NEW FIRE ESCAPE STAIR AND PROVIDING GREEN ROOF, ALL AS PART OF AN ATTACHED STRUCTURE.  SIZE AND LOCATION AS SHOWN IN THE APPLICATION / PLAN.
+
+USES: FOR MULTI-FAMILY HOUSEHOLD LIVING SEVEN (7) DWELLING UNITS (EXISTING 5 UNITS AND NEW 2 UNITS TOTAL 7 UNITS) AND EXISTING ACCESSORY PARKING S
+   → Appears to be: PARKING LOCATION requirement
+   → Appears to be: PARKING SPACE DIMENSIONS
+   → Appears to be: PARKING ACCESS/DRIVEWAY requirement
+
+6. 1000-10 N DELAWARE AVE (2022-04-14)
+   Appeal text: PERMIT FOR THE ERECTION OF A DETACHED STRUCTURE (84’ HIGH), ROODF DECK ACCESSED BY A ROOF DECK ACCESS STRUCTURE (428 SF) WITH ELEVATOR PENTHOUSE; BALCONIES AND AWNING FOR A VACANT COMMERCIAL SPACE AT FIRST FLOOR (WITHIN 30’ FRONT BUILDING DEPTH, MEASURED FROM THE FRONT BUILDING LINE) FOR A MULTI-FAMILY HOUSEHOLD LIVING (78 DWELLING UNITS) WITH TWENTY-FOUR (24) 1A CLASS BICYCLE SPACES IN AN ACCESSI
+   → Appears to be: PARKING LOCATION requirement
+   → Appears to be: PARKING SPACE DIMENSIONS
+   → Appears to be: PARKING ACCESS/DRIVEWAY requirement
+
+7. 1500-30 E ERIE AVE (2022-05-24)
+   Appeal text: Permit for a night club and private club in an existing structure with other existing uses in the same structure and accessory parking spaces as previously approved
+
+ **MUST BE TRIED * *
+   → Appears to be: PARKING ACCESS/DRIVEWAY requirement
+
+8. 2036-48 N 2ND ST (2023-04-24)
+   Appeal text: Permit Application is for a change of use to non-accessory surface parking lot with accessory offices in an existing attached structure and for the erection of a new fence. Sizes and locations as shown on plans. See AP#966237 for previously approved Unity of Use.
+
+Two (2) Use Refusals
+One (1) Zoning Refusal
+   → Appears to be: PARKING LOCATION requirement
+   → Appears to be: PARKING SPACE DIMENSIONS
+   → Appears to be: PARKING ACCESS/DRIVEWAY requirement
+   → Appears to be: PARKING SURFACE MATERIAL requirement
+
+9. 2029-39 N 2ND ST (2023-04-24)
+   Appeal text: SPECIAL EXCEPTION FOR THE PERMANENT PLACEMENT OF FOUR (4) FOOD TRUCKS FOR USE AS TAKE-OUT RESTAURANTS. COMMISSARY AND CATERING SERVICES WITHIN EXISTING DETACHED STRUCTURE, AND FOR THE CREATION OF FIVE (5) PARKING SPACES. SIZE AND LOCATION AS SHOWN IN PLAN. 
+   → Appears to be: PARKING LOCATION requirement
+   → Appears to be: PARKING SPACE DIMENSIONS
+
+10. 1423 MCFERRAN ST (2023-03-03)
+   Appeal text: PERMIT FOR USE FOR SURFACE NON-ACCESSORY PARKING WITH THIRTEEN PARKING SPACES INCLUDING ONE ACCESSIBLE PARKING SPACE. SIZE AND LOCATION AS SHOWN ON PLANS
+   → Appears to be: PARKING LOCATION requirement
+   → Appears to be: PARKING SPACE DIMENSIONS
+   → Appears to be: PARKING ACCESS/DRIVEWAY requirement
+   → Appears to be: PARKING SURFACE MATERIAL requirement
+
+====================================================================================================
+SUMMARY
+====================================================================================================
+
+Parking variances in no-minimum districts likely involve:
+
+1. **Parking MAXIMUMS** - Districts may have maximums, not just minimums
+   (e.g., RSA-5 might limit parking to prevent garage conversions)
+
+2. **Parking LOCATION requirements** - Where parking must be located
+   (e.g., rear yard only, not in front setback)
+
+3. **Parking DESIGN standards** - Dimensions, surfacing, access
+   (e.g., must be paved, must have certain dimensions, driveway width)
+
+4. **Accessory structure rules** - Garages counting against lot coverage
+   (e.g., detached garage exceeds accessory structure allowance)
+
+5. **Historic or contextual requirements** - In certain overlays
+
+This explains why 'eliminating parking minimums' alone won't solve all parking variances.
+Need to also address parking maximums, location rules, and design standards.
